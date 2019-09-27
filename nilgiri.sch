@@ -1,0 +1,617 @@
+EESchema Schematic File Version 4
+LIBS:nilgiri-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "nilgiri (Left hand keypad)"
+Date "2019-09-26"
+Rev "0.01"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 4650 3750 0    50   Input ~ 0
+Row1
+Text GLabel 3350 2900 2    50   Input ~ 0
+Row2
+Text GLabel 3350 3000 2    50   Input ~ 0
+Row1
+Text GLabel 3350 3100 2    50   Input ~ 0
+Row0
+Wire Wire Line
+	1950 2200 1950 2300
+$Comp
+L power:GND #PWR01
+U 1 1 5D8CC72A
+P 1700 2300
+F 0 "#PWR01" H 1700 2050 50  0001 C CNN
+F 1 "GND" V 1705 2172 50  0000 R CNN
+F 2 "" H 1700 2300 50  0001 C CNN
+F 3 "" H 1700 2300 50  0001 C CNN
+	1    1700 2300
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5D8CCFB9
+P 3800 2100
+F 0 "#PWR03" H 3800 1850 50  0001 C CNN
+F 1 "GND" V 3805 1972 50  0000 R CNN
+F 2 "" H 3800 2100 50  0001 C CNN
+F 3 "" H 3800 2100 50  0001 C CNN
+	1    3800 2100
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1950 2300 1700 2300
+Text GLabel 3400 2200 2    50   Input ~ 0
+Reset
+$Comp
+L power:VCC #PWR04
+U 1 1 5D8CE387
+P 3800 2300
+F 0 "#PWR04" H 3800 2150 50  0001 C CNN
+F 1 "VCC" V 3818 2427 50  0000 L CNN
+F 2 "" H 3800 2300 50  0001 C CNN
+F 3 "" H 3800 2300 50  0001 C CNN
+	1    3800 2300
+	0    1    -1   0   
+$EndComp
+Text GLabel 5150 2300 1    50   Input ~ 0
+Col0
+$Comp
+L kbd:SW_PUSH SW1
+U 1 1 5D8CF41D
+P 5450 2750
+F 0 "SW1" H 5450 3005 50  0000 C CNN
+F 1 "SW_PUSH" H 5450 2914 50  0000 C CNN
+F 2 "kbd:CherryMX-Hotswap-v2" H 5450 2750 50  0001 C CNN
+F 3 "" H 5450 2750 50  0000 C CNN
+	1    5450 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 5D8D2937
+P 5750 2900
+F 0 "D1" V 5796 2821 50  0000 R CNN
+F 1 "D" V 5705 2821 50  0000 R CNN
+F 2 "Keebio:D_SOD123F" H 5750 2900 50  0001 C CNN
+F 3 "~" H 5750 2900 50  0001 C CNN
+	1    5750 2900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5150 2300 5150 2750
+Text GLabel 4650 3050 0    50   Input ~ 0
+Row0
+$Comp
+L kbd:SW_PUSH SW2
+U 1 1 5D8D8D84
+P 5450 3450
+F 0 "SW2" H 5450 3705 50  0000 C CNN
+F 1 "SW_PUSH" H 5450 3614 50  0000 C CNN
+F 2 "kbd:CherryMX-Hotswap-v2" H 5450 3450 50  0001 C CNN
+F 3 "" H 5450 3450 50  0000 C CNN
+	1    5450 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D2
+U 1 1 5D8D8D8A
+P 5750 3600
+F 0 "D2" V 5796 3521 50  0000 R CNN
+F 1 "D" V 5705 3521 50  0000 R CNN
+F 2 "Keebio:D_SOD123F" H 5750 3600 50  0001 C CNN
+F 3 "~" H 5750 3600 50  0001 C CNN
+	1    5750 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4650 3750 5750 3750
+Wire Wire Line
+	4650 3050 5750 3050
+Wire Wire Line
+	5150 3450 5150 2750
+Connection ~ 5150 2750
+$Comp
+L kbd:SW_PUSH SW5
+U 1 1 5D8DF6BC
+P 6450 3450
+F 0 "SW5" H 6450 3705 50  0000 C CNN
+F 1 "SW_PUSH" H 6450 3614 50  0000 C CNN
+F 2 "kbd:CherryMX-Hotswap-v2" H 6450 3450 50  0001 C CNN
+F 3 "" H 6450 3450 50  0000 C CNN
+	1    6450 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D5
+U 1 1 5D8DF6C2
+P 6750 3600
+F 0 "D5" V 6796 3521 50  0000 R CNN
+F 1 "D" V 6705 3521 50  0000 R CNN
+F 2 "Keebio:D_SOD123F" H 6750 3600 50  0001 C CNN
+F 3 "~" H 6750 3600 50  0001 C CNN
+	1    6750 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L kbd:SW_PUSH SW4
+U 1 1 5D8E00E6
+P 6450 2750
+F 0 "SW4" H 6450 3005 50  0000 C CNN
+F 1 "SW_PUSH" H 6450 2914 50  0000 C CNN
+F 2 "kbd:CherryMX-Hotswap-v2" H 6450 2750 50  0001 C CNN
+F 3 "" H 6450 2750 50  0000 C CNN
+	1    6450 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D4
+U 1 1 5D8E00EC
+P 6750 2900
+F 0 "D4" V 6796 2821 50  0000 R CNN
+F 1 "D" V 6705 2821 50  0000 R CNN
+F 2 "Keebio:D_SOD123F" H 6750 2900 50  0001 C CNN
+F 3 "~" H 6750 2900 50  0001 C CNN
+	1    6750 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L kbd:SW_PUSH SW6
+U 1 1 5D8E4D5E
+P 6450 4150
+F 0 "SW6" H 6450 4405 50  0000 C CNN
+F 1 "SW_PUSH" H 6450 4314 50  0000 C CNN
+F 2 "kbd:CherryMX-Hotswap-v2" H 6450 4150 50  0001 C CNN
+F 3 "" H 6450 4150 50  0000 C CNN
+	1    6450 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D6
+U 1 1 5D8E4D64
+P 6750 4300
+F 0 "D6" V 6796 4221 50  0000 R CNN
+F 1 "D" V 6705 4221 50  0000 R CNN
+F 2 "Keebio:D_SOD123F" H 6750 4300 50  0001 C CNN
+F 3 "~" H 6750 4300 50  0001 C CNN
+	1    6750 4300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6150 2750 6150 3450
+Wire Wire Line
+	6150 4150 6150 3450
+Connection ~ 6150 3450
+Connection ~ 5750 3050
+Wire Wire Line
+	5750 3750 6750 3750
+Connection ~ 5750 3750
+Text GLabel 4650 4450 0    50   Input ~ 0
+Row2
+Text GLabel 6150 2300 1    50   Input ~ 0
+Col1
+Text GLabel 7100 2300 1    50   Input ~ 0
+Col2
+$Comp
+L kbd:SW_PUSH SW7
+U 1 1 5D8FB3FB
+P 7400 2750
+F 0 "SW7" H 7400 3005 50  0000 C CNN
+F 1 "SW_PUSH" H 7400 2914 50  0000 C CNN
+F 2 "kbd:CherryMX-Hotswap-v2" H 7400 2750 50  0001 C CNN
+F 3 "" H 7400 2750 50  0000 C CNN
+	1    7400 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D7
+U 1 1 5D8FB401
+P 7700 2900
+F 0 "D7" V 7746 2821 50  0000 R CNN
+F 1 "D" V 7655 2821 50  0000 R CNN
+F 2 "Keebio:D_SOD123F" H 7700 2900 50  0001 C CNN
+F 3 "~" H 7700 2900 50  0001 C CNN
+	1    7700 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L kbd:SW_PUSH SW8
+U 1 1 5D8FB407
+P 7400 3450
+F 0 "SW8" H 7400 3705 50  0000 C CNN
+F 1 "SW_PUSH" H 7400 3614 50  0000 C CNN
+F 2 "kbd:CherryMX-Hotswap-v2" H 7400 3450 50  0001 C CNN
+F 3 "" H 7400 3450 50  0000 C CNN
+	1    7400 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D8
+U 1 1 5D8FB40D
+P 7700 3600
+F 0 "D8" V 7746 3521 50  0000 R CNN
+F 1 "D" V 7655 3521 50  0000 R CNN
+F 2 "Keebio:D_SOD123F" H 7700 3600 50  0001 C CNN
+F 3 "~" H 7700 3600 50  0001 C CNN
+	1    7700 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L kbd:SW_PUSH SW11
+U 1 1 5D8FB414
+P 8400 3450
+F 0 "SW11" H 8400 3705 50  0000 C CNN
+F 1 "SW_PUSH" H 8400 3614 50  0000 C CNN
+F 2 "kbd:CherryMX-Hotswap-v2" H 8400 3450 50  0001 C CNN
+F 3 "" H 8400 3450 50  0000 C CNN
+	1    8400 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D11
+U 1 1 5D8FB41A
+P 8700 3600
+F 0 "D11" V 8746 3521 50  0000 R CNN
+F 1 "D" V 8655 3521 50  0000 R CNN
+F 2 "Keebio:D_SOD123F" H 8700 3600 50  0001 C CNN
+F 3 "~" H 8700 3600 50  0001 C CNN
+	1    8700 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L kbd:SW_PUSH SW10
+U 1 1 5D8FB420
+P 8400 2750
+F 0 "SW10" H 8400 3005 50  0000 C CNN
+F 1 "SW_PUSH" H 8400 2914 50  0000 C CNN
+F 2 "kbd:CherryMX-Hotswap-v2" H 8400 2750 50  0001 C CNN
+F 3 "" H 8400 2750 50  0000 C CNN
+	1    8400 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D10
+U 1 1 5D8FB426
+P 8700 2900
+F 0 "D10" V 8746 2821 50  0000 R CNN
+F 1 "D" V 8655 2821 50  0000 R CNN
+F 2 "Keebio:D_SOD123F" H 8700 2900 50  0001 C CNN
+F 3 "~" H 8700 2900 50  0001 C CNN
+	1    8700 2900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8100 2750 8100 3450
+Wire Wire Line
+	8100 4150 8100 3450
+Connection ~ 8100 3450
+Connection ~ 7700 3050
+Wire Wire Line
+	5750 3050 6750 3050
+Wire Wire Line
+	7100 2300 7100 2750
+Wire Wire Line
+	7100 2750 7100 3450
+Connection ~ 7100 2750
+$Comp
+L kbd:SW_PUSH SW9
+U 1 1 5D901472
+P 7400 4150
+F 0 "SW9" H 7400 4405 50  0000 C CNN
+F 1 "SW_PUSH" H 7400 4314 50  0000 C CNN
+F 2 "kbd:CherryMX-Hotswap-v2" H 7400 4150 50  0001 C CNN
+F 3 "" H 7400 4150 50  0000 C CNN
+	1    7400 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D9
+U 1 1 5D901478
+P 7700 4300
+F 0 "D9" V 7746 4221 50  0000 R CNN
+F 1 "D" V 7655 4221 50  0000 R CNN
+F 2 "Keebio:D_SOD123F" H 7700 4300 50  0001 C CNN
+F 3 "~" H 7700 4300 50  0001 C CNN
+	1    7700 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L kbd:SW_PUSH SW12
+U 1 1 5D901D5A
+P 8400 4150
+F 0 "SW12" H 8400 4405 50  0000 C CNN
+F 1 "SW_PUSH" H 8400 4314 50  0000 C CNN
+F 2 "kbd:CherryMX-Hotswap-v2" H 8400 4150 50  0001 C CNN
+F 3 "" H 8400 4150 50  0000 C CNN
+	1    8400 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D12
+U 1 1 5D901D60
+P 8700 4300
+F 0 "D12" V 8746 4221 50  0000 R CNN
+F 1 "D" V 8655 4221 50  0000 R CNN
+F 2 "Keebio:D_SOD123F" H 8700 4300 50  0001 C CNN
+F 3 "~" H 8700 4300 50  0001 C CNN
+	1    8700 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L kbd:SW_PUSH SW3
+U 1 1 5D904BF4
+P 5450 4150
+F 0 "SW3" H 5450 4405 50  0000 C CNN
+F 1 "SW_PUSH" H 5450 4314 50  0000 C CNN
+F 2 "kbd:CherryMX-Hotswap-v2" H 5450 4150 50  0001 C CNN
+F 3 "" H 5450 4150 50  0000 C CNN
+	1    5450 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D3
+U 1 1 5D904BFA
+P 5750 4300
+F 0 "D3" V 5796 4221 50  0000 R CNN
+F 1 "D" V 5705 4221 50  0000 R CNN
+F 2 "Keebio:D_SOD123F" H 5750 4300 50  0001 C CNN
+F 3 "~" H 5750 4300 50  0001 C CNN
+	1    5750 4300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6150 2750 6150 2300
+Connection ~ 6150 2750
+Wire Wire Line
+	6750 3050 7700 3050
+Connection ~ 6750 3050
+Wire Wire Line
+	6750 3750 7700 3750
+Connection ~ 6750 3750
+Connection ~ 7700 3750
+Wire Wire Line
+	7700 3750 8700 3750
+Wire Wire Line
+	6750 4450 7700 4450
+Connection ~ 7700 4450
+Wire Wire Line
+	7700 4450 8700 4450
+$Comp
+L kbd:SW_PUSH SW13
+U 1 1 5D9079DF
+P 9400 2750
+F 0 "SW13" H 9400 3005 50  0000 C CNN
+F 1 "SW_PUSH" H 9400 2914 50  0000 C CNN
+F 2 "kbd:CherryMX-Hotswap-v2" H 9400 2750 50  0001 C CNN
+F 3 "" H 9400 2750 50  0000 C CNN
+	1    9400 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D13
+U 1 1 5D9079E5
+P 9700 2900
+F 0 "D13" V 9746 2821 50  0000 R CNN
+F 1 "D" V 9655 2821 50  0000 R CNN
+F 2 "Keebio:D_SOD123F" H 9700 2900 50  0001 C CNN
+F 3 "~" H 9700 2900 50  0001 C CNN
+	1    9700 2900
+	0    -1   -1   0   
+$EndComp
+Text GLabel 8100 2300 1    50   Input ~ 0
+Col3
+Text GLabel 9100 2300 1    50   Input ~ 0
+Col4
+Wire Wire Line
+	8100 2300 8100 2750
+Connection ~ 8100 2750
+Wire Wire Line
+	7100 3450 7100 4150
+Connection ~ 7100 3450
+$Comp
+L Device:Rotary_Encoder_Switch RE1
+U 1 1 5D90A0EC
+P 5300 5350
+F 0 "RE1" H 5300 5717 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 5300 5626 50  0000 C CNN
+F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm" H 5150 5510 50  0001 C CNN
+F 3 "~" H 5300 5610 50  0001 C CNN
+	1    5300 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5D90D04E
+P 4800 5350
+F 0 "#PWR05" H 4800 5100 50  0001 C CNN
+F 1 "GND" V 4805 5222 50  0000 R CNN
+F 2 "" H 4800 5350 50  0001 C CNN
+F 3 "" H 4800 5350 50  0001 C CNN
+	1    4800 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5750 4450 6750 4450
+Connection ~ 5750 4450
+Connection ~ 6750 4450
+Wire Wire Line
+	4650 4450 5750 4450
+Wire Wire Line
+	7700 3050 8700 3050
+Wire Wire Line
+	9100 2300 9100 2750
+Wire Wire Line
+	9700 3050 8700 3050
+Connection ~ 8700 3050
+Wire Wire Line
+	5150 4150 5150 3450
+Connection ~ 5150 3450
+Text GLabel 5900 5450 2    50   Input ~ 0
+Row1
+Text GLabel 5900 5250 2    50   Input ~ 0
+Col4
+Text GLabel 5000 5250 0    50   Input ~ 0
+RA1
+Text GLabel 5000 5450 0    50   Input ~ 0
+RB1
+$Comp
+L Device:Rotary_Encoder_Switch RE2
+U 1 1 5D91D73A
+P 7000 5350
+F 0 "RE2" H 7000 5717 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 7000 5626 50  0000 C CNN
+F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm" H 6850 5510 50  0001 C CNN
+F 3 "~" H 7000 5610 50  0001 C CNN
+	1    7000 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5D91D740
+P 6500 5350
+F 0 "#PWR06" H 6500 5100 50  0001 C CNN
+F 1 "GND" V 6505 5222 50  0000 R CNN
+F 2 "" H 6500 5350 50  0001 C CNN
+F 3 "" H 6500 5350 50  0001 C CNN
+	1    6500 5350
+	0    1    1    0   
+$EndComp
+Text GLabel 7600 5450 2    50   Input ~ 0
+Row2
+Text GLabel 7600 5250 2    50   Input ~ 0
+Col4
+Text GLabel 6700 5250 0    50   Input ~ 0
+RA2
+Text GLabel 6700 5450 0    50   Input ~ 0
+RB2
+NoConn ~ 3350 2000
+Wire Wire Line
+	3400 2200 3350 2200
+$Comp
+L Switch:SW_Push RST1
+U 1 1 5D9206B8
+P 2050 3800
+F 0 "RST1" H 2050 4085 50  0000 C CNN
+F 1 "SW_RESET" H 2050 3994 50  0000 C CNN
+F 2 "kbd:ResetSW_1side" H 2050 4000 50  0001 C CNN
+F 3 "~" H 2050 4000 50  0001 C CNN
+	1    2050 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5D921131
+P 1850 3850
+F 0 "#PWR02" H 1850 3600 50  0001 C CNN
+F 1 "GND" H 1855 3677 50  0000 C CNN
+F 2 "" H 1850 3850 50  0001 C CNN
+F 3 "" H 1850 3850 50  0001 C CNN
+	1    1850 3850
+	1    0    0    -1  
+$EndComp
+Text GLabel 2250 3800 2    50   Input ~ 0
+Reset
+Wire Wire Line
+	1850 3850 1850 3800
+NoConn ~ 1950 2400
+NoConn ~ 1950 2500
+NoConn ~ 1950 2100
+NoConn ~ 1950 2000
+NoConn ~ 1950 2600
+Wire Wire Line
+	3800 2300 3350 2300
+Wire Wire Line
+	3800 2100 3350 2100
+Text GLabel 1950 2700 0    50   Input ~ 0
+Col0
+Text GLabel 1950 2800 0    50   Input ~ 0
+Col1
+Text GLabel 1950 2900 0    50   Input ~ 0
+Col2
+Text GLabel 1950 3000 0    50   Input ~ 0
+Col3
+Text GLabel 1950 3100 0    50   Input ~ 0
+Col4
+$Comp
+L kbd:ProMicro U1
+U 1 1 5D933115
+P 2650 2750
+F 0 "U1" H 2650 3787 60  0000 C CNN
+F 1 "ProMicro" H 2650 3681 60  0000 C CNN
+F 2 "kbd:ProMicro_v3" H 2750 1700 60  0001 C CNN
+F 3 "" H 2750 1700 60  0000 C CNN
+	1    2650 2750
+	1    0    0    -1  
+$EndComp
+Connection ~ 1950 2300
+Text GLabel 3350 2400 2    50   Output ~ 0
+RB1
+Text GLabel 3350 2500 2    50   Output ~ 0
+RA1
+Text GLabel 3350 2600 2    50   Output ~ 0
+RA2
+Text GLabel 3350 2700 2    50   Output ~ 0
+RB2
+NoConn ~ 3350 2800
+Wire Wire Line
+	4800 5350 5000 5350
+Wire Wire Line
+	6500 5350 6700 5350
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5D948D31
+P 3800 2300
+F 0 "#FLG02" H 3800 2375 50  0001 C CNN
+F 1 "PWR_FLAG" H 3800 2473 50  0000 C CNN
+F 2 "" H 3800 2300 50  0001 C CNN
+F 3 "~" H 3800 2300 50  0001 C CNN
+	1    3800 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5D949C76
+P 1700 2300
+F 0 "#FLG01" H 1700 2375 50  0001 C CNN
+F 1 "PWR_FLAG" H 1700 2473 50  0000 C CNN
+F 2 "" H 1700 2300 50  0001 C CNN
+F 3 "~" H 1700 2300 50  0001 C CNN
+	1    1700 2300
+	1    0    0    -1  
+$EndComp
+Connection ~ 3800 2300
+Connection ~ 1700 2300
+$Comp
+L Device:D D15
+U 1 1 5D95D9B5
+P 7450 5450
+F 0 "D15" V 7496 5371 50  0000 R CNN
+F 1 "D" V 7405 5371 50  0000 R CNN
+F 2 "Keebio:D_SOD123F" H 7450 5450 50  0001 C CNN
+F 3 "~" H 7450 5450 50  0001 C CNN
+	1    7450 5450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D14
+U 1 1 5D96543D
+P 5750 5450
+F 0 "D14" V 5796 5371 50  0000 R CNN
+F 1 "D" V 5705 5371 50  0000 R CNN
+F 2 "Keebio:D_SOD123F" H 5750 5450 50  0001 C CNN
+F 3 "~" H 5750 5450 50  0001 C CNN
+	1    5750 5450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7600 5250 7300 5250
+Wire Wire Line
+	5600 5250 5900 5250
+$EndSCHEMATC
