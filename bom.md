@@ -12,19 +12,20 @@ Option 3: Use BLE Micro Pro(uses 13pin Conthrough)
 |---------|-----------------------|-------| ------------- | :-: | :-: | :-: |
 | U1      | Controller(\*)        | 1     | ATmega32U4-AU |  v  |     |     |
 | U2      | Pro Micro(\*)         | 1     | normal / BLE  |     |  v  |  v  |
-| D1-12   | Diode                 | 12    | 1N4148W       |  v  |  v  |  v  |
-| D13     | Shotkey Diode(\*)     | 1     | MBR120        |  v  |     |     |
-| D14-15  | Shotkey Diode(\*)     | 2     | MBR120        |     |     |  v  |
+| D1-14   | Diode                 | 12    | 1N4148W       |  v  |  v  |  v  |
+| D21     | Shotkey Diode(\*)     | 1     | MBR120        |  v  |     |     |
+| D31-32  | Shotkey Diode(\*)     | 2     | MBR120        |     |     |  v  |
 | LED1    | 0603 / 1608M(\*)      | 1     | E6C0603UWC    |  v  |     |     |
-| R1-2    | R 0603 / 1608M        | 2     | 22Ω           |  v  |     |     |
-| R3      | R 0603 / 1608M        | 1     | 400Ω          |  v  |     |     |
-| R4      | R 0603 / 1608M        | 1     | 1kΩ           |  v  |     |     |
-| R5-6    | R 0603 / 1608M        | 2     | 5.1kΩ         |  v  |     |     |
-| R7      | R 0603 / 1608M        | 1     | 10kΩ          |  v  |     |     |
-| C1-2    | C 0603 / 1608M        | 1     | 22pF          |  v  |     |     |
-| C3-4    | Tantalum 1206 / 3216M | 1     | 10uF          |  v  |     |     |
-| C5      | C 0603 / 1608M        | 1     | 0.1uF         |  v  |     |     |
-| C6      | C 0603 / 1608M        | 1     | 1uF           |  v  |     |     |
+| R1-2    | R 0603 / 1608M        | 2     | 5.1kΩ         |  v  |     |     |
+| R3-4    | R 0603 / 1608M        | 2     | 22Ω           |  v  |     |     |
+| R5      | R 0603 / 1608M        | 1     | 1kΩ           |  v  |     |     |
+| R6      | R 0603 / 1608M        | 1     | 10kΩ          |  v  |     |     |
+| R??     | R 0603 / 1608M        | 1     | 400Ω          |  v  |     |     |
+| C1      | Tantalum 1206 / 3216M | 1     | 10uF          |  v  |     |     |
+| C2-3    | C 0603 / 1608M        | 2     | 1uF           |  v  |     |     |
+| C4-5    | C 0603 / 1608M        | 2     | 0.1uF         |  v  |     |     |
+| C6-7    | C 0603 / 1608M        | 2     | 22pF          |  v  |     |     |
+| C10     | Tantalum 1206 / 3216M | 1     | 10uF          |     |     |  v  |
 | F1      | PTC 1206 / 3216M      | 1     | 500mA         |  v  |     |     |
 | Y1      | Xtal 3225M 4pin       | 1     | 16MHz         |  v  |     |     |
 | SW1-12  | Kailh Hotswap         | 12    | MX / Choc     |  v  |  v  |  v  |
