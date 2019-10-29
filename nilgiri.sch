@@ -14,391 +14,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 6550 2450 0    50   Input ~ 0
-Row1
 Text GLabel 3900 2300 2    50   Input ~ 0
 Row1
-Text GLabel 3550 7400 2    50   Input ~ 0
-Row0
-Text GLabel 7050 1000 1    50   Input ~ 0
-Col0
-$Comp
-L kbd:SW_PUSH SW1
-U 1 1 5D8CF41D
-P 7350 1450
-F 0 "SW1" H 7350 1705 50  0000 C CNN
-F 1 "SW_PUSH" H 7350 1614 50  0000 C CNN
-F 2 "kbd:CherryMX_Choc_1u" H 7350 1450 50  0001 C CNN
-F 3 "" H 7350 1450 50  0000 C CNN
-	1    7350 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D1
-U 1 1 5D8D2937
-P 7650 1600
-F 0 "D1" V 7696 1521 50  0000 R CNN
-F 1 "1N4148W" V 7605 1521 50  0000 R CNN
-F 2 "nilgiri:D3_TH_SMD" H 7650 1600 50  0001 C CNN
-F 3 "~" H 7650 1600 50  0001 C CNN
-	1    7650 1600
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7050 1000 7050 1450
-Text GLabel 6550 1750 0    50   Input ~ 0
-Row0
-$Comp
-L kbd:SW_PUSH SW2
-U 1 1 5D8D8D84
-P 7350 2150
-F 0 "SW2" H 7350 2405 50  0000 C CNN
-F 1 "SW_PUSH" H 7350 2314 50  0000 C CNN
-F 2 "kbd:CherryMX_Choc_1u" H 7350 2150 50  0001 C CNN
-F 3 "" H 7350 2150 50  0000 C CNN
-	1    7350 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D2
-U 1 1 5D8D8D8A
-P 7650 2300
-F 0 "D2" V 7696 2221 50  0000 R CNN
-F 1 "1N4148W" V 7605 2221 50  0000 R CNN
-F 2 "nilgiri:D3_TH_SMD" H 7650 2300 50  0001 C CNN
-F 3 "~" H 7650 2300 50  0001 C CNN
-	1    7650 2300
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6550 2450 7650 2450
-Wire Wire Line
-	6550 1750 7650 1750
-Wire Wire Line
-	7050 2150 7050 1450
-Connection ~ 7050 1450
-$Comp
-L kbd:SW_PUSH SW5
-U 1 1 5D8DF6BC
-P 8350 2150
-F 0 "SW5" H 8350 2405 50  0000 C CNN
-F 1 "SW_PUSH" H 8350 2314 50  0000 C CNN
-F 2 "kbd:CherryMX_Choc_1u" H 8350 2150 50  0001 C CNN
-F 3 "" H 8350 2150 50  0000 C CNN
-	1    8350 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D5
-U 1 1 5D8DF6C2
-P 8650 2300
-F 0 "D5" V 8696 2221 50  0000 R CNN
-F 1 "1N4148W" V 8605 2221 50  0000 R CNN
-F 2 "nilgiri:D3_TH_SMD" H 8650 2300 50  0001 C CNN
-F 3 "~" H 8650 2300 50  0001 C CNN
-	1    8650 2300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L kbd:SW_PUSH SW4
-U 1 1 5D8E00E6
-P 8350 1450
-F 0 "SW4" H 8350 1705 50  0000 C CNN
-F 1 "SW_PUSH" H 8350 1614 50  0000 C CNN
-F 2 "kbd:CherryMX_Choc_1u" H 8350 1450 50  0001 C CNN
-F 3 "" H 8350 1450 50  0000 C CNN
-	1    8350 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D4
-U 1 1 5D8E00EC
-P 8650 1600
-F 0 "D4" V 8696 1521 50  0000 R CNN
-F 1 "1N4148W" V 8605 1521 50  0000 R CNN
-F 2 "nilgiri:D3_TH_SMD" H 8650 1600 50  0001 C CNN
-F 3 "~" H 8650 1600 50  0001 C CNN
-	1    8650 1600
-	0    -1   -1   0   
-$EndComp
-$Comp
-L kbd:SW_PUSH SW6
-U 1 1 5D8E4D5E
-P 8350 2850
-F 0 "SW6" H 8350 3105 50  0000 C CNN
-F 1 "SW_PUSH" H 8350 3014 50  0000 C CNN
-F 2 "kbd:CherryMX_Choc_1u" H 8350 2850 50  0001 C CNN
-F 3 "" H 8350 2850 50  0000 C CNN
-	1    8350 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D6
-U 1 1 5D8E4D64
-P 8650 3000
-F 0 "D6" V 8696 2921 50  0000 R CNN
-F 1 "1N4148W" V 8605 2921 50  0000 R CNN
-F 2 "nilgiri:D3_TH_SMD" H 8650 3000 50  0001 C CNN
-F 3 "~" H 8650 3000 50  0001 C CNN
-	1    8650 3000
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	8050 1450 8050 2150
-Wire Wire Line
-	8050 2850 8050 2150
-Connection ~ 8050 2150
-Connection ~ 7650 1750
-Wire Wire Line
-	7650 2450 8650 2450
-Connection ~ 7650 2450
-Text GLabel 6550 3150 0    50   Input ~ 0
-Row2
-Text GLabel 8050 1000 1    50   Input ~ 0
-Col1
-Text GLabel 9000 1000 1    50   Input ~ 0
-Col2
-$Comp
-L kbd:SW_PUSH SW7
-U 1 1 5D8FB3FB
-P 9300 1450
-F 0 "SW7" H 9300 1705 50  0000 C CNN
-F 1 "SW_PUSH" H 9300 1614 50  0000 C CNN
-F 2 "kbd:CherryMX_Choc_1u" H 9300 1450 50  0001 C CNN
-F 3 "" H 9300 1450 50  0000 C CNN
-	1    9300 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D7
-U 1 1 5D8FB401
-P 9600 1600
-F 0 "D7" V 9646 1521 50  0000 R CNN
-F 1 "1N4148W" V 9555 1521 50  0000 R CNN
-F 2 "nilgiri:D3_TH_SMD" H 9600 1600 50  0001 C CNN
-F 3 "~" H 9600 1600 50  0001 C CNN
-	1    9600 1600
-	0    -1   -1   0   
-$EndComp
-$Comp
-L kbd:SW_PUSH SW8
-U 1 1 5D8FB407
-P 9300 2150
-F 0 "SW8" H 9300 2405 50  0000 C CNN
-F 1 "SW_PUSH" H 9300 2314 50  0000 C CNN
-F 2 "kbd:CherryMX_Choc_1u" H 9300 2150 50  0001 C CNN
-F 3 "" H 9300 2150 50  0000 C CNN
-	1    9300 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D8
-U 1 1 5D8FB40D
-P 9600 2300
-F 0 "D8" V 9646 2221 50  0000 R CNN
-F 1 "1N4148W" V 9555 2221 50  0000 R CNN
-F 2 "nilgiri:D3_TH_SMD" H 9600 2300 50  0001 C CNN
-F 3 "~" H 9600 2300 50  0001 C CNN
-	1    9600 2300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L kbd:SW_PUSH SW11
-U 1 1 5D8FB414
-P 10300 2150
-F 0 "SW11" H 10300 2405 50  0000 C CNN
-F 1 "SW_PUSH" H 10300 2314 50  0000 C CNN
-F 2 "kbd:CherryMX_Choc_1u" H 10300 2150 50  0001 C CNN
-F 3 "" H 10300 2150 50  0000 C CNN
-	1    10300 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D11
-U 1 1 5D8FB41A
-P 10600 2300
-F 0 "D11" V 10646 2221 50  0000 R CNN
-F 1 "1N4148W" V 10555 2221 50  0000 R CNN
-F 2 "nilgiri:D3_TH_SMD" H 10600 2300 50  0001 C CNN
-F 3 "~" H 10600 2300 50  0001 C CNN
-	1    10600 2300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L kbd:SW_PUSH SW10
-U 1 1 5D8FB420
-P 10300 1450
-F 0 "SW10" H 10300 1705 50  0000 C CNN
-F 1 "SW_PUSH" H 10300 1614 50  0000 C CNN
-F 2 "kbd:CherryMX_Choc_1u" H 10300 1450 50  0001 C CNN
-F 3 "" H 10300 1450 50  0000 C CNN
-	1    10300 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D10
-U 1 1 5D8FB426
-P 10600 1600
-F 0 "D10" V 10646 1521 50  0000 R CNN
-F 1 "1N4148W" V 10555 1521 50  0000 R CNN
-F 2 "nilgiri:D3_TH_SMD" H 10600 1600 50  0001 C CNN
-F 3 "~" H 10600 1600 50  0001 C CNN
-	1    10600 1600
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	10000 1450 10000 2150
-Wire Wire Line
-	10000 2850 10000 2150
-Connection ~ 10000 2150
-Connection ~ 9600 1750
-Wire Wire Line
-	7650 1750 8650 1750
-Wire Wire Line
-	9000 1000 9000 1450
-Wire Wire Line
-	9000 1450 9000 2150
-Connection ~ 9000 1450
-$Comp
-L kbd:SW_PUSH SW9
-U 1 1 5D901472
-P 9300 2850
-F 0 "SW9" H 9300 3105 50  0000 C CNN
-F 1 "SW_PUSH" H 9300 3014 50  0000 C CNN
-F 2 "kbd:CherryMX_Choc_1u" H 9300 2850 50  0001 C CNN
-F 3 "" H 9300 2850 50  0000 C CNN
-	1    9300 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D9
-U 1 1 5D901478
-P 9600 3000
-F 0 "D9" V 9646 2921 50  0000 R CNN
-F 1 "1N4148W" V 9555 2921 50  0000 R CNN
-F 2 "nilgiri:D3_TH_SMD" H 9600 3000 50  0001 C CNN
-F 3 "~" H 9600 3000 50  0001 C CNN
-	1    9600 3000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L kbd:SW_PUSH SW12
-U 1 1 5D901D5A
-P 10300 2850
-F 0 "SW12" H 10300 3105 50  0000 C CNN
-F 1 "SW_PUSH" H 10300 3014 50  0000 C CNN
-F 2 "kbd:CherryMX_Choc_1u" H 10300 2850 50  0001 C CNN
-F 3 "" H 10300 2850 50  0000 C CNN
-	1    10300 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D12
-U 1 1 5D901D60
-P 10600 3000
-F 0 "D12" V 10646 2921 50  0000 R CNN
-F 1 "1N4148W" V 10555 2921 50  0000 R CNN
-F 2 "nilgiri:D3_TH_SMD" H 10600 3000 50  0001 C CNN
-F 3 "~" H 10600 3000 50  0001 C CNN
-	1    10600 3000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L kbd:SW_PUSH SW3
-U 1 1 5D904BF4
-P 7350 2850
-F 0 "SW3" H 7350 3105 50  0000 C CNN
-F 1 "SW_PUSH" H 7350 3014 50  0000 C CNN
-F 2 "kbd:CherryMX_Choc_1u" H 7350 2850 50  0001 C CNN
-F 3 "" H 7350 2850 50  0000 C CNN
-	1    7350 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D3
-U 1 1 5D904BFA
-P 7650 3000
-F 0 "D3" V 7696 2921 50  0000 R CNN
-F 1 "1N4148W" V 7605 2921 50  0000 R CNN
-F 2 "nilgiri:D3_TH_SMD" H 7650 3000 50  0001 C CNN
-F 3 "~" H 7650 3000 50  0001 C CNN
-	1    7650 3000
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	8050 1450 8050 1000
-Connection ~ 8050 1450
-Wire Wire Line
-	8650 1750 9600 1750
-Connection ~ 8650 1750
-Wire Wire Line
-	8650 2450 9600 2450
-Connection ~ 8650 2450
-Connection ~ 9600 2450
-Wire Wire Line
-	9600 2450 10600 2450
-Wire Wire Line
-	8650 3150 9600 3150
-Connection ~ 9600 3150
-Wire Wire Line
-	9600 3150 10600 3150
-Text GLabel 10000 1000 1    50   Input ~ 0
-Col3
-Wire Wire Line
-	10000 1000 10000 1450
-Connection ~ 10000 1450
-Wire Wire Line
-	9000 2150 9000 2850
-Connection ~ 9000 2150
-$Comp
-L Device:Rotary_Encoder_Switch EC1
-U 1 1 5D90A0EC
-P 7200 4050
-F 0 "EC1" H 7200 4417 50  0000 C CNN
-F 1 "Rotary_Encoder_Switch" H 7200 4326 50  0000 C CNN
-F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm" H 7050 4210 50  0001 C CNN
-F 3 "~" H 7200 4310 50  0001 C CNN
-	1    7200 4050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7650 3150 8650 3150
-Connection ~ 7650 3150
-Connection ~ 8650 3150
-Wire Wire Line
-	6550 3150 7650 3150
-Wire Wire Line
-	9600 1750 10600 1750
-Wire Wire Line
-	7050 2850 7050 2150
-Connection ~ 7050 2150
-Text GLabel 7800 4150 2    50   Input ~ 0
-Row0
-Text GLabel 7800 3950 2    50   Input ~ 0
-Col4
-Text GLabel 6900 3950 0    50   Input ~ 0
-RA1
-Text GLabel 6900 4150 0    50   Input ~ 0
-RB1
-$Comp
-L Device:Rotary_Encoder_Switch EC2
-U 1 1 5D91D73A
-P 8900 4050
-F 0 "EC2" H 8900 4417 50  0000 C CNN
-F 1 "Rotary_Encoder_Switch" H 8900 4326 50  0000 C CNN
-F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm" H 8750 4210 50  0001 C CNN
-F 3 "~" H 8900 4310 50  0001 C CNN
-	1    8900 4050
-	1    0    0    -1  
-$EndComp
-Text GLabel 9500 4150 2    50   Input ~ 0
-Row1
-Text GLabel 9500 3950 2    50   Input ~ 0
-Col4
-Text GLabel 8600 3950 0    50   Input ~ 0
-RA2
-Text GLabel 8600 4150 0    50   Input ~ 0
-RB2
 $Comp
 L Switch:SW_Push SW13
 U 1 1 5D9206B8
@@ -410,50 +27,6 @@ F 3 "~" H 1800 1650 50  0001 C CNN
 	1    1800 1450
 	1    0    0    -1  
 $EndComp
-Text GLabel 2150 7000 0    50   Input ~ 0
-Col0
-Text GLabel 2150 7200 0    50   Input ~ 0
-Col2
-Text GLabel 2150 7300 0    50   Input ~ 0
-Col3
-Text GLabel 2150 7400 0    50   Input ~ 0
-Col4
-Text GLabel 3550 6800 2    50   Input ~ 0
-RB1
-Text GLabel 3550 6700 2    50   Input ~ 0
-RA1
-Text GLabel 3550 7000 2    50   Input ~ 0
-RB2
-Wire Wire Line
-	6700 4050 6900 4050
-Wire Wire Line
-	8400 4050 8600 4050
-$Comp
-L Device:D D14
-U 1 1 5D95D9B5
-P 9350 4150
-F 0 "D14" H 9400 4300 50  0000 R CNN
-F 1 "1N4148W" H 9400 4400 50  0000 R CNN
-F 2 "nilgiri:D3_TH_SMD" H 9350 4150 50  0001 C CNN
-F 3 "~" H 9350 4150 50  0001 C CNN
-	1    9350 4150
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:D D13
-U 1 1 5D96543D
-P 7650 4150
-F 0 "D13" H 7700 4250 50  0000 R CNN
-F 1 "1N4148W" H 7700 4350 50  0000 R CNN
-F 2 "nilgiri:D3_TH_SMD" H 7650 4150 50  0001 C CNN
-F 3 "~" H 7650 4150 50  0001 C CNN
-	1    7650 4150
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9500 3950 9200 3950
-Wire Wire Line
-	7500 3950 7800 3950
 $Comp
 L Device:R R6
 U 1 1 5D95E829
@@ -486,14 +59,6 @@ Text GLabel 3600 2200 2    50   Input ~ 0
 SCK
 Text GLabel 3900 2400 2    50   Input ~ 0
 Row2
-Text GLabel 2150 7100 0    50   Input ~ 0
-Col1
-Text GLabel 3550 7300 2    50   Input ~ 0
-Row1
-Text GLabel 3550 6900 2    50   Input ~ 0
-RA2
-Text GLabel 3550 6500 2    50   Input ~ 0
-RESET
 $Comp
 L Connector:AVR-ISP-6 J3
 U 1 1 5DA55F34
@@ -533,11 +98,6 @@ Wire Wire Line
 	5050 4250 5250 4250
 Wire Wire Line
 	5050 5150 5250 5150
-NoConn ~ 2150 6900
-NoConn ~ 2150 6800
-NoConn ~ 2150 6700
-NoConn ~ 2150 6400
-NoConn ~ 2150 6300
 Text GLabel 3600 2600 2    50   Input ~ 0
 Col4
 Text GLabel 3600 2500 2    50   Input ~ 0
@@ -595,69 +155,6 @@ Wire Wire Line
 Wire Wire Line
 	2750 5400 2750 5500
 $Comp
-L Connector:USB_C_Receptacle_USB2.0 J1
-U 1 1 5DB0C6F8
-P 4650 1550
-F 0 "J1" H 4300 2450 50  0000 C CNN
-F 1 "USB-C" H 4350 2350 50  0000 C CNN
-F 2 "Connector_USB:USB_C_Receptacle_Palconn_UTC16-G" H 4800 1550 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 4800 1550 50  0001 C CNN
-	1    4650 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 5DB16155
-P 5400 1250
-F 0 "R2" V 5500 1250 50  0000 C CNN
-F 1 "5.1k" V 5400 1250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5330 1250 50  0001 C CNN
-F 3 "~" H 5400 1250 50  0001 C CNN
-	1    5400 1250
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R1
-U 1 1 5DB17D3D
-P 5400 1150
-F 0 "R1" V 5300 1150 50  0000 C CNN
-F 1 "5.1k" V 5400 1150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5330 1150 50  0001 C CNN
-F 3 "~" H 5400 1150 50  0001 C CNN
-	1    5400 1150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5550 1250 5650 1250
-Wire Wire Line
-	5550 1150 5650 1150
-Wire Wire Line
-	5650 1150 5650 1250
-$Comp
-L power:GND #PWR016
-U 1 1 5DB276D5
-P 5850 1150
-F 0 "#PWR016" H 5850 900 50  0001 C CNN
-F 1 "GND" V 5855 1022 50  0000 R CNN
-F 2 "" H 5850 1150 50  0001 C CNN
-F 3 "" H 5850 1150 50  0001 C CNN
-	1    5850 1150
-	0    -1   1    0   
-$EndComp
-Connection ~ 5650 1150
-Wire Wire Line
-	5250 1450 5250 1550
-Text GLabel 5350 1550 2    50   BiDi ~ 0
-D-
-Text GLabel 5350 1650 2    50   BiDi ~ 0
-D+
-Text GLabel 5500 950  2    50   Output ~ 0
-VBUS
-NoConn ~ 5250 2050
-NoConn ~ 5250 2150
-Wire Wire Line
-	5650 1150 5850 1150
-$Comp
 L Device:Polyfuse F1
 U 1 1 5DBD59D5
 P 1250 3300
@@ -681,29 +178,10 @@ F 3 "" H 700 5000 50  0001 C CNN
 	1    700  5000
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	5250 950  5450 950 
-$Comp
-L power:PWR_FLAG #FLG03
-U 1 1 5DC2C0DC
-P 5450 950
-F 0 "#FLG03" H 5450 1025 50  0001 C CNN
-F 1 "PWR_FLAG" H 5450 1123 50  0000 C CNN
-F 2 "" H 5450 950 50  0001 C CNN
-F 3 "~" H 5450 950 50  0001 C CNN
-	1    5450 950 
-	1    0    0    -1  
-$EndComp
-Connection ~ 5450 950 
-Wire Wire Line
-	5450 950  5500 950 
 Text GLabel 2950 1100 1    50   Input ~ 0
 VCC
 NoConn ~ 3450 3800
-NoConn ~ 3550 7100
 NoConn ~ 3750 8300
-Wire Wire Line
-	5250 1650 5250 1750
 $Comp
 L Device:R R3
 U 1 1 5D9D4BBD
@@ -884,75 +362,6 @@ Wire Wire Line
 	2950 1100 2950 1250
 Text GLabel 4550 4750 0    50   Input ~ 0
 MOSI
-$Comp
-L Device:Battery_Cell BT1
-U 1 1 5DB1DB96
-P 4650 6650
-F 0 "BT1" H 4768 6746 50  0000 L CNN
-F 1 "3V" H 4768 6655 50  0000 L CNN
-F 2 "nilgiri:HU1632" V 4650 6710 50  0001 C CNN
-F 3 "~" V 4650 6710 50  0001 C CNN
-	1    4650 6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Battery_Cell BT2
-U 1 1 5DB1E220
-P 5250 6650
-F 0 "BT2" H 5368 6746 50  0000 L CNN
-F 1 "3V" H 5368 6655 50  0000 L CNN
-F 2 "nilgiri:HU1632" V 5250 6710 50  0001 C CNN
-F 3 "~" V 5250 6710 50  0001 C CNN
-	1    5250 6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J10
-U 1 1 5DB77451
-P 5250 5750
-F 0 "J10" H 5350 5650 50  0000 R CNN
-F 1 "BAT+" H 5400 5550 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5250 5750 50  0001 C CNN
-F 3 "~" H 5250 5750 50  0001 C CNN
-	1    5250 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J11
-U 1 1 5DB7F512
-P 4350 5600
-F 0 "J11" V 4300 5550 50  0000 R CNN
-F 1 "BAT-" V 4200 5550 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4350 5600 50  0001 C CNN
-F 3 "~" H 4350 5600 50  0001 C CNN
-	1    4350 5600
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Schottky D31
-U 1 1 5DB86C8D
-P 4650 6300
-F 0 "D31" V 4600 6600 50  0000 R CNN
-F 1 "MBR120" V 4700 6750 50  0000 R CNN
-F 2 "Keebio:D_SOD123F" H 4650 6300 50  0001 C CNN
-F 3 "~" H 4650 6300 50  0001 C CNN
-	1    4650 6300
-	0    1    1    0   
-$EndComp
-Connection ~ 4650 6150
-Wire Wire Line
-	4350 5800 4350 6150
-Wire Wire Line
-	4350 6750 4650 6750
-Wire Wire Line
-	4400 6150 4350 6150
-Connection ~ 4350 6150
-Wire Wire Line
-	4350 6150 4350 6750
-Wire Wire Line
-	4650 6150 4600 6150
-Text GLabel 3550 7200 2    50   Input ~ 0
-Row2
 Wire Wire Line
 	3900 2500 3850 2500
 Wire Wire Line
@@ -986,10 +395,6 @@ F 3 "~" H 2950 1650 50  0001 C CNN
 	1    2950 1650
 	0    1    1    0   
 $EndComp
-Text GLabel 3550 6400 2    50   Input ~ 0
-GND
-Text GLabel 4350 2550 3    50   Input ~ 0
-GND
 Text GLabel 2050 3750 3    50   Input ~ 0
 GND
 Text GLabel 1000 2400 0    50   Input ~ 0
@@ -1017,20 +422,10 @@ Wire Wire Line
 	2750 5500 2850 5500
 Text GLabel 1400 1450 0    50   Input ~ 0
 GND
-Text GLabel 6700 4050 0    50   Input ~ 0
-GND
-Text GLabel 8400 4050 0    50   Input ~ 0
-GND
-Text GLabel 2150 6500 0    50   Input ~ 0
-GND
-Text GLabel 2150 6600 0    50   Input ~ 0
-GND
 Wire Wire Line
 	1100 2400 1100 2700
 Wire Wire Line
 	1100 2700 1350 2700
-Text GLabel 4250 6150 0    50   Input ~ 0
-GND
 Text GLabel 3900 2200 2    50   Input ~ 0
 MOSI
 Wire Wire Line
@@ -1042,18 +437,6 @@ Wire Wire Line
 Connection ~ 3850 2300
 Wire Wire Line
 	3850 2300 3900 2300
-Connection ~ 4650 2450
-$Comp
-L power:PWR_FLAG #FLG0102
-U 1 1 5DB7DE50
-P 4650 2450
-F 0 "#FLG0102" H 4650 2525 50  0001 C CNN
-F 1 "PWR_FLAG" V 4650 2578 50  0000 L CNN
-F 2 "" H 4650 2450 50  0001 C CNN
-F 3 "~" H 4650 2450 50  0001 C CNN
-	1    4650 2450
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	900  4350 1250 4350
 Connection ~ 1250 3950
@@ -1062,29 +445,6 @@ Wire Wire Line
 Connection ~ 1250 4350
 Wire Wire Line
 	1250 4350 1600 4350
-$Comp
-L Device:CP_Small C10
-U 1 1 5DB46BCD
-P 4500 6150
-F 0 "C10" V 4300 6100 50  0000 L CNN
-F 1 "10u" V 4400 6100 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I_Pad1.58x1.35mm_HandSolder" H 4500 6150 50  0001 C CNN
-F 3 "~" H 4500 6150 50  0001 C CNN
-	1    4500 6150
-	0    1    1    0   
-$EndComp
-$Comp
-L Switch:SW_SPDT SW14
-U 1 1 5DC2ECDC
-P 4850 5750
-F 0 "SW14" H 4850 5450 50  0000 L CNN
-F 1 "PWR" H 4900 5550 50  0000 L CNN
-F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 4850 5750 50  0001 C CNN
-F 3 "~" H 4850 5750 50  0001 C CNN
-	1    4850 5750
-	-1   0    0    1   
-$EndComp
-NoConn ~ 4650 5650
 NoConn ~ 700  6400
 NoConn ~ -1200 3850
 $Comp
@@ -1098,129 +458,94 @@ F 3 "~" H 1450 2700 50  0001 C CNN
 	1    1450 2700
 	0    1    1    0   
 $EndComp
-Text GLabel 4500 3750 3    50   Input ~ 0
-GND
-Wire Wire Line
-	4500 3750 4500 3700
-Connection ~ 4500 3700
-Wire Wire Line
-	4400 3700 4500 3700
-Text GLabel 4800 3100 2    50   Output ~ 0
-VBUS
-$Comp
-L Connector:USB_B_Micro J2
-U 1 1 5DBAF102
-P 4500 3300
-F 0 "J2" H 4557 3767 50  0000 C CNN
-F 1 "USB_B_Micro" H 4557 3676 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Wuerth_629105150521" H 4650 3250 50  0001 C CNN
-F 3 "~" H 4650 3250 50  0001 C CNN
-	1    4500 3300
-	1    0    0    -1  
-$EndComp
-NoConn ~ 4800 3500
-Wire Wire Line
-	5250 1550 5350 1550
-Connection ~ 5250 1550
-Wire Wire Line
-	5350 1650 5250 1650
-Connection ~ 5250 1650
-Text GLabel 4800 3400 2    50   BiDi ~ 0
-D-
-Text GLabel 4800 3300 2    50   BiDi ~ 0
-D+
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 5DB4A9FD
-P 4000 7650
-F 0 "H2" H 4100 7696 50  0000 L CNN
-F 1 "MountingHole" H 4100 7605 50  0000 L CNN
-F 2 "nilgiri:M2_spacer" H 4000 7650 50  0001 C CNN
-F 3 "~" H 4000 7650 50  0001 C CNN
-	1    4000 7650
+P 7050 6150
+F 0 "H2" H 7150 6196 50  0000 L CNN
+F 1 "MountingHole" H 7150 6105 50  0000 L CNN
+F 2 "nilgiri:M2_vis" H 7050 6150 50  0001 C CNN
+F 3 "~" H 7050 6150 50  0001 C CNN
+	1    7050 6150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H6
 U 1 1 5DB4B5D0
-P 4750 7650
-F 0 "H6" H 4850 7696 50  0000 L CNN
-F 1 "MountingHole" H 4850 7605 50  0000 L CNN
-F 2 "nilgiri:M2_spacer" H 4750 7650 50  0001 C CNN
-F 3 "~" H 4750 7650 50  0001 C CNN
-	1    4750 7650
+P 8600 6150
+F 0 "H6" H 8700 6196 50  0000 L CNN
+F 1 "MountingHole" H 8700 6105 50  0000 L CNN
+F 2 "nilgiri:M2_spacer" H 8600 6150 50  0001 C CNN
+F 3 "~" H 8600 6150 50  0001 C CNN
+	1    8600 6150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5DB4B94A
-P 4000 7450
-F 0 "H1" H 4100 7496 50  0000 L CNN
-F 1 "MountingHole" H 4100 7405 50  0000 L CNN
-F 2 "nilgiri:M2_spacer" H 4000 7450 50  0001 C CNN
-F 3 "~" H 4000 7450 50  0001 C CNN
-	1    4000 7450
+P 7050 5950
+F 0 "H1" H 7150 5996 50  0000 L CNN
+F 1 "MountingHole" H 7150 5905 50  0000 L CNN
+F 2 "nilgiri:M2_vis" H 7050 5950 50  0001 C CNN
+F 3 "~" H 7050 5950 50  0001 C CNN
+	1    7050 5950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H5
 U 1 1 5DB4C3DF
-P 4750 7450
-F 0 "H5" H 4850 7496 50  0000 L CNN
-F 1 "MountingHole" H 4850 7405 50  0000 L CNN
-F 2 "nilgiri:M2_spacer" H 4750 7450 50  0001 C CNN
-F 3 "~" H 4750 7450 50  0001 C CNN
-	1    4750 7450
+P 8600 5950
+F 0 "H5" H 8700 5996 50  0000 L CNN
+F 1 "MountingHole" H 8700 5905 50  0000 L CNN
+F 2 "nilgiri:M2_spacer" H 8600 5950 50  0001 C CNN
+F 3 "~" H 8600 5950 50  0001 C CNN
+	1    8600 5950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H3
 U 1 1 5DB4C79D
-P 5550 7450
-F 0 "H3" H 5650 7496 50  0000 L CNN
-F 1 "MountingHole" H 5650 7405 50  0000 L CNN
-F 2 "nilgiri:M2_spacer" H 5550 7450 50  0001 C CNN
-F 3 "~" H 5550 7450 50  0001 C CNN
-	1    5550 7450
+P 7850 5950
+F 0 "H3" H 7950 5996 50  0000 L CNN
+F 1 "MountingHole" H 7950 5905 50  0000 L CNN
+F 2 "nilgiri:M2_vis" H 7850 5950 50  0001 C CNN
+F 3 "~" H 7850 5950 50  0001 C CNN
+	1    7850 5950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H7
 U 1 1 5DB4C9C3
-P 6300 7450
-F 0 "H7" H 6400 7496 50  0000 L CNN
-F 1 "MountingHole" H 6400 7405 50  0000 L CNN
-F 2 "nilgiri:M2_spacer" H 6300 7450 50  0001 C CNN
-F 3 "~" H 6300 7450 50  0001 C CNN
-	1    6300 7450
+P 9350 5950
+F 0 "H7" H 9450 5996 50  0000 L CNN
+F 1 "MountingHole" H 9450 5905 50  0000 L CNN
+F 2 "nilgiri:M2_spacer" H 9350 5950 50  0001 C CNN
+F 3 "~" H 9350 5950 50  0001 C CNN
+	1    9350 5950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H8
 U 1 1 5DB4CBB6
-P 6300 7650
-F 0 "H8" H 6400 7696 50  0000 L CNN
-F 1 "MountingHole" H 6400 7605 50  0000 L CNN
-F 2 "nilgiri:M2_spacer" H 6300 7650 50  0001 C CNN
-F 3 "~" H 6300 7650 50  0001 C CNN
-	1    6300 7650
+P 9350 6150
+F 0 "H8" H 9450 6196 50  0000 L CNN
+F 1 "MountingHole" H 9450 6105 50  0000 L CNN
+F 2 "nilgiri:M2_spacer" H 9350 6150 50  0001 C CNN
+F 3 "~" H 9350 6150 50  0001 C CNN
+	1    9350 6150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 5DB4CF1F
-P 5550 7650
-F 0 "H4" H 5650 7696 50  0000 L CNN
-F 1 "MountingHole" H 5650 7605 50  0000 L CNN
-F 2 "nilgiri:M2_spacer" H 5550 7650 50  0001 C CNN
-F 3 "~" H 5550 7650 50  0001 C CNN
-	1    5550 7650
+P 7850 6150
+F 0 "H4" H 7950 6196 50  0000 L CNN
+F 1 "MountingHole" H 7950 6105 50  0000 L CNN
+F 2 "nilgiri:M2_vis" H 7850 6150 50  0001 C CNN
+F 3 "~" H 7850 6150 50  0001 C CNN
+	1    7850 6150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4650 5850 4650 6150
-NoConn ~ 3550 6300
-NoConn ~ 3550 6600
 $Comp
 L Device:CP_Small C1
 U 1 1 5DC80830
@@ -1290,31 +615,575 @@ Wire Wire Line
 	2750 1800 2750 1700
 Wire Wire Line
 	2950 1550 2950 1650
-Wire Wire Line
-	4350 2450 4650 2450
-Wire Wire Line
-	4350 2450 4350 2550
-Connection ~ 4350 2450
 Text GLabel 3600 4200 2    50   Input ~ 0
 GND
 Wire Wire Line
 	3600 4200 3450 4200
+Wire Wire Line
+	1900 2300 2250 2300
+Wire Wire Line
+	2250 2500 1400 2500
+Wire Wire Line
+	1550 2700 2250 2700
 $Comp
-L kbd:ProMicro U2
-U 1 1 5DB1FC64
-P 2850 7050
-F 0 "U2" H 2850 8087 50  0000 C CNN
-F 1 "ProMicro" H 2850 7981 50  0000 C CNN
-F 2 "kbd:ProMicro_v3" H 2950 6000 60  0001 C CNN
-F 3 "" H 2950 6000 60  0000 C CNN
-	1    2850 7050
+L Mechanical:MountingHole H99
+U 1 1 5DBABBA8
+P 7050 5700
+F 0 "H99" H 7150 5746 50  0000 L CNN
+F 1 "LOGO" H 7150 5655 50  0000 L CNN
+F 2 "nilgiri:nil_logo" H 7050 5700 50  0001 C CNN
+F 3 "~" H 7050 5700 50  0001 C CNN
+	1    7050 5700
+	1    0    0    -1  
+$EndComp
+Connection ~ 7050 2150
+Wire Wire Line
+	7050 2850 7050 2150
+Wire Wire Line
+	9600 1750 10600 1750
+Wire Wire Line
+	6550 3150 7650 3150
+Connection ~ 8650 3150
+Connection ~ 7650 3150
+Wire Wire Line
+	7650 3150 8650 3150
+Connection ~ 9000 2150
+Wire Wire Line
+	9000 2150 9000 2850
+Connection ~ 10000 1450
+Wire Wire Line
+	10000 1000 10000 1450
+Text GLabel 10000 1000 1    50   Input ~ 0
+Col3
+Wire Wire Line
+	9600 3150 10600 3150
+Connection ~ 9600 3150
+Wire Wire Line
+	8650 3150 9600 3150
+Wire Wire Line
+	9600 2450 10600 2450
+Connection ~ 9600 2450
+Connection ~ 8650 2450
+Wire Wire Line
+	8650 2450 9600 2450
+Connection ~ 8650 1750
+Wire Wire Line
+	8650 1750 9600 1750
+Connection ~ 8050 1450
+Wire Wire Line
+	8050 1450 8050 1000
+$Comp
+L Device:D D3
+U 1 1 5D904BFA
+P 7650 3000
+F 0 "D3" V 7696 2921 50  0000 R CNN
+F 1 "1N4148W" V 7605 2921 50  0000 R CNN
+F 2 "nilgiri:D3_TH_SMD" H 7650 3000 50  0001 C CNN
+F 3 "~" H 7650 3000 50  0001 C CNN
+	1    7650 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L kbd:SW_PUSH SW3
+U 1 1 5D904BF4
+P 7350 2850
+F 0 "SW3" H 7350 3105 50  0000 C CNN
+F 1 "SW_PUSH" H 7350 3014 50  0000 C CNN
+F 2 "kbd:CherryMX_Choc_1u" H 7350 2850 50  0001 C CNN
+F 3 "" H 7350 2850 50  0000 C CNN
+	1    7350 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D12
+U 1 1 5D901D60
+P 10600 3000
+F 0 "D12" V 10646 2921 50  0000 R CNN
+F 1 "1N4148W" V 10555 2921 50  0000 R CNN
+F 2 "nilgiri:D3_TH_SMD" H 10600 3000 50  0001 C CNN
+F 3 "~" H 10600 3000 50  0001 C CNN
+	1    10600 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L kbd:SW_PUSH SW12
+U 1 1 5D901D5A
+P 10300 2850
+F 0 "SW12" H 10300 3105 50  0000 C CNN
+F 1 "SW_PUSH" H 10300 3014 50  0000 C CNN
+F 2 "kbd:CherryMX_Choc_1u" H 10300 2850 50  0001 C CNN
+F 3 "" H 10300 2850 50  0000 C CNN
+	1    10300 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D9
+U 1 1 5D901478
+P 9600 3000
+F 0 "D9" V 9646 2921 50  0000 R CNN
+F 1 "1N4148W" V 9555 2921 50  0000 R CNN
+F 2 "nilgiri:D3_TH_SMD" H 9600 3000 50  0001 C CNN
+F 3 "~" H 9600 3000 50  0001 C CNN
+	1    9600 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L kbd:SW_PUSH SW9
+U 1 1 5D901472
+P 9300 2850
+F 0 "SW9" H 9300 3105 50  0000 C CNN
+F 1 "SW_PUSH" H 9300 3014 50  0000 C CNN
+F 2 "kbd:CherryMX_Choc_1u" H 9300 2850 50  0001 C CNN
+F 3 "" H 9300 2850 50  0000 C CNN
+	1    9300 2850
+	1    0    0    -1  
+$EndComp
+Connection ~ 9000 1450
+Wire Wire Line
+	9000 1450 9000 2150
+Wire Wire Line
+	9000 1000 9000 1450
+Wire Wire Line
+	7650 1750 8650 1750
+Connection ~ 9600 1750
+Connection ~ 10000 2150
+Wire Wire Line
+	10000 2850 10000 2150
+Wire Wire Line
+	10000 1450 10000 2150
+$Comp
+L Device:D D10
+U 1 1 5D8FB426
+P 10600 1600
+F 0 "D10" V 10646 1521 50  0000 R CNN
+F 1 "1N4148W" V 10555 1521 50  0000 R CNN
+F 2 "nilgiri:D3_TH_SMD" H 10600 1600 50  0001 C CNN
+F 3 "~" H 10600 1600 50  0001 C CNN
+	1    10600 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L kbd:SW_PUSH SW10
+U 1 1 5D8FB420
+P 10300 1450
+F 0 "SW10" H 10300 1705 50  0000 C CNN
+F 1 "SW_PUSH" H 10300 1614 50  0000 C CNN
+F 2 "kbd:CherryMX_Choc_1u" H 10300 1450 50  0001 C CNN
+F 3 "" H 10300 1450 50  0000 C CNN
+	1    10300 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D11
+U 1 1 5D8FB41A
+P 10600 2300
+F 0 "D11" V 10646 2221 50  0000 R CNN
+F 1 "1N4148W" V 10555 2221 50  0000 R CNN
+F 2 "nilgiri:D3_TH_SMD" H 10600 2300 50  0001 C CNN
+F 3 "~" H 10600 2300 50  0001 C CNN
+	1    10600 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L kbd:SW_PUSH SW11
+U 1 1 5D8FB414
+P 10300 2150
+F 0 "SW11" H 10300 2405 50  0000 C CNN
+F 1 "SW_PUSH" H 10300 2314 50  0000 C CNN
+F 2 "kbd:CherryMX_Choc_1u" H 10300 2150 50  0001 C CNN
+F 3 "" H 10300 2150 50  0000 C CNN
+	1    10300 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D8
+U 1 1 5D8FB40D
+P 9600 2300
+F 0 "D8" V 9646 2221 50  0000 R CNN
+F 1 "1N4148W" V 9555 2221 50  0000 R CNN
+F 2 "nilgiri:D3_TH_SMD" H 9600 2300 50  0001 C CNN
+F 3 "~" H 9600 2300 50  0001 C CNN
+	1    9600 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L kbd:SW_PUSH SW8
+U 1 1 5D8FB407
+P 9300 2150
+F 0 "SW8" H 9300 2405 50  0000 C CNN
+F 1 "SW_PUSH" H 9300 2314 50  0000 C CNN
+F 2 "kbd:CherryMX_Choc_1u" H 9300 2150 50  0001 C CNN
+F 3 "" H 9300 2150 50  0000 C CNN
+	1    9300 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D7
+U 1 1 5D8FB401
+P 9600 1600
+F 0 "D7" V 9646 1521 50  0000 R CNN
+F 1 "1N4148W" V 9555 1521 50  0000 R CNN
+F 2 "nilgiri:D3_TH_SMD" H 9600 1600 50  0001 C CNN
+F 3 "~" H 9600 1600 50  0001 C CNN
+	1    9600 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L kbd:SW_PUSH SW7
+U 1 1 5D8FB3FB
+P 9300 1450
+F 0 "SW7" H 9300 1705 50  0000 C CNN
+F 1 "SW_PUSH" H 9300 1614 50  0000 C CNN
+F 2 "kbd:CherryMX_Choc_1u" H 9300 1450 50  0001 C CNN
+F 3 "" H 9300 1450 50  0000 C CNN
+	1    9300 1450
+	1    0    0    -1  
+$EndComp
+Text GLabel 9000 1000 1    50   Input ~ 0
+Col2
+Text GLabel 8050 1000 1    50   Input ~ 0
+Col1
+Text GLabel 6550 3150 0    50   Input ~ 0
+Row2
+Connection ~ 7650 2450
+Wire Wire Line
+	7650 2450 8650 2450
+Connection ~ 7650 1750
+Connection ~ 8050 2150
+Wire Wire Line
+	8050 2850 8050 2150
+Wire Wire Line
+	8050 1450 8050 2150
+$Comp
+L Device:D D6
+U 1 1 5D8E4D64
+P 8650 3000
+F 0 "D6" V 8696 2921 50  0000 R CNN
+F 1 "1N4148W" V 8605 2921 50  0000 R CNN
+F 2 "nilgiri:D3_TH_SMD" H 8650 3000 50  0001 C CNN
+F 3 "~" H 8650 3000 50  0001 C CNN
+	1    8650 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L kbd:SW_PUSH SW6
+U 1 1 5D8E4D5E
+P 8350 2850
+F 0 "SW6" H 8350 3105 50  0000 C CNN
+F 1 "SW_PUSH" H 8350 3014 50  0000 C CNN
+F 2 "kbd:CherryMX_Choc_1u" H 8350 2850 50  0001 C CNN
+F 3 "" H 8350 2850 50  0000 C CNN
+	1    8350 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D4
+U 1 1 5D8E00EC
+P 8650 1600
+F 0 "D4" V 8696 1521 50  0000 R CNN
+F 1 "1N4148W" V 8605 1521 50  0000 R CNN
+F 2 "nilgiri:D3_TH_SMD" H 8650 1600 50  0001 C CNN
+F 3 "~" H 8650 1600 50  0001 C CNN
+	1    8650 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L kbd:SW_PUSH SW4
+U 1 1 5D8E00E6
+P 8350 1450
+F 0 "SW4" H 8350 1705 50  0000 C CNN
+F 1 "SW_PUSH" H 8350 1614 50  0000 C CNN
+F 2 "kbd:CherryMX_Choc_1u" H 8350 1450 50  0001 C CNN
+F 3 "" H 8350 1450 50  0000 C CNN
+	1    8350 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D5
+U 1 1 5D8DF6C2
+P 8650 2300
+F 0 "D5" V 8696 2221 50  0000 R CNN
+F 1 "1N4148W" V 8605 2221 50  0000 R CNN
+F 2 "nilgiri:D3_TH_SMD" H 8650 2300 50  0001 C CNN
+F 3 "~" H 8650 2300 50  0001 C CNN
+	1    8650 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L kbd:SW_PUSH SW5
+U 1 1 5D8DF6BC
+P 8350 2150
+F 0 "SW5" H 8350 2405 50  0000 C CNN
+F 1 "SW_PUSH" H 8350 2314 50  0000 C CNN
+F 2 "kbd:CherryMX_Choc_1u" H 8350 2150 50  0001 C CNN
+F 3 "" H 8350 2150 50  0000 C CNN
+	1    8350 2150
+	1    0    0    -1  
+$EndComp
+Connection ~ 7050 1450
+Wire Wire Line
+	7050 2150 7050 1450
+Wire Wire Line
+	6550 1750 7650 1750
+Wire Wire Line
+	6550 2450 7650 2450
+$Comp
+L Device:D D2
+U 1 1 5D8D8D8A
+P 7650 2300
+F 0 "D2" V 7696 2221 50  0000 R CNN
+F 1 "1N4148W" V 7605 2221 50  0000 R CNN
+F 2 "nilgiri:D3_TH_SMD" H 7650 2300 50  0001 C CNN
+F 3 "~" H 7650 2300 50  0001 C CNN
+	1    7650 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L kbd:SW_PUSH SW2
+U 1 1 5D8D8D84
+P 7350 2150
+F 0 "SW2" H 7350 2405 50  0000 C CNN
+F 1 "SW_PUSH" H 7350 2314 50  0000 C CNN
+F 2 "kbd:CherryMX_Choc_1u" H 7350 2150 50  0001 C CNN
+F 3 "" H 7350 2150 50  0000 C CNN
+	1    7350 2150
+	1    0    0    -1  
+$EndComp
+Text GLabel 6550 1750 0    50   Input ~ 0
+Row0
+Wire Wire Line
+	7050 1000 7050 1450
+$Comp
+L Device:D D1
+U 1 1 5D8D2937
+P 7650 1600
+F 0 "D1" V 7696 1521 50  0000 R CNN
+F 1 "1N4148W" V 7605 1521 50  0000 R CNN
+F 2 "nilgiri:D3_TH_SMD" H 7650 1600 50  0001 C CNN
+F 3 "~" H 7650 1600 50  0001 C CNN
+	1    7650 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L kbd:SW_PUSH SW1
+U 1 1 5D8CF41D
+P 7350 1450
+F 0 "SW1" H 7350 1705 50  0000 C CNN
+F 1 "SW_PUSH" H 7350 1614 50  0000 C CNN
+F 2 "kbd:CherryMX_Choc_1u" H 7350 1450 50  0001 C CNN
+F 3 "" H 7350 1450 50  0000 C CNN
+	1    7350 1450
+	1    0    0    -1  
+$EndComp
+Text GLabel 7050 1000 1    50   Input ~ 0
+Col0
+Text GLabel 6550 2450 0    50   Input ~ 0
+Row1
+Connection ~ 4350 2450
+Wire Wire Line
+	4350 2450 4350 2550
+Wire Wire Line
+	4350 2450 4650 2450
+Text GLabel 4800 3300 2    50   BiDi ~ 0
+D+
+Text GLabel 4800 3400 2    50   BiDi ~ 0
+D-
+Connection ~ 5250 1650
+Wire Wire Line
+	5350 1650 5250 1650
+Connection ~ 5250 1550
+Wire Wire Line
+	5250 1550 5350 1550
+NoConn ~ 4800 3500
+$Comp
+L Connector:USB_B_Micro J2
+U 1 1 5DBAF102
+P 4500 3300
+F 0 "J2" H 4557 3767 50  0000 C CNN
+F 1 "USB_B_Micro" H 4557 3676 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Wuerth_629105150521" H 4650 3250 50  0001 C CNN
+F 3 "~" H 4650 3250 50  0001 C CNN
+	1    4500 3300
+	1    0    0    -1  
+$EndComp
+Text GLabel 4800 3100 2    50   Output ~ 0
+VBUS
+Wire Wire Line
+	4400 3700 4500 3700
+Connection ~ 4500 3700
+Wire Wire Line
+	4500 3750 4500 3700
+Text GLabel 4500 3750 3    50   Input ~ 0
+GND
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5DB7DE50
+P 4650 2450
+F 0 "#FLG0102" H 4650 2525 50  0001 C CNN
+F 1 "PWR_FLAG" V 4650 2578 50  0000 L CNN
+F 2 "" H 4650 2450 50  0001 C CNN
+F 3 "~" H 4650 2450 50  0001 C CNN
+	1    4650 2450
+	0    1    1    0   
+$EndComp
+Connection ~ 4650 2450
+Text GLabel 4350 2550 3    50   Input ~ 0
+GND
+Wire Wire Line
+	5250 1650 5250 1750
+Wire Wire Line
+	5450 950  5500 950 
+Connection ~ 5450 950 
+$Comp
+L power:PWR_FLAG #FLG03
+U 1 1 5DC2C0DC
+P 5450 950
+F 0 "#FLG03" H 5450 1025 50  0001 C CNN
+F 1 "PWR_FLAG" H 5450 1123 50  0000 C CNN
+F 2 "" H 5450 950 50  0001 C CNN
+F 3 "~" H 5450 950 50  0001 C CNN
+	1    5450 950 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5250 6150 4650 6150
+	5250 950  5450 950 
 Wire Wire Line
-	4650 6750 5250 6750
-Connection ~ 4650 6750
+	5650 1150 5850 1150
+NoConn ~ 5250 2150
+NoConn ~ 5250 2050
+Text GLabel 5500 950  2    50   Output ~ 0
+VBUS
+Text GLabel 5350 1650 2    50   BiDi ~ 0
+D+
+Text GLabel 5350 1550 2    50   BiDi ~ 0
+D-
+Wire Wire Line
+	5250 1450 5250 1550
+Connection ~ 5650 1150
+$Comp
+L power:GND #PWR016
+U 1 1 5DB276D5
+P 5850 1150
+F 0 "#PWR016" H 5850 900 50  0001 C CNN
+F 1 "GND" V 5855 1022 50  0000 R CNN
+F 2 "" H 5850 1150 50  0001 C CNN
+F 3 "" H 5850 1150 50  0001 C CNN
+	1    5850 1150
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5650 1150 5650 1250
+Wire Wire Line
+	5550 1150 5650 1150
+Wire Wire Line
+	5550 1250 5650 1250
+$Comp
+L Device:R R1
+U 1 1 5DB17D3D
+P 5400 1150
+F 0 "R1" V 5300 1150 50  0000 C CNN
+F 1 "5.1k" V 5400 1150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5330 1150 50  0001 C CNN
+F 3 "~" H 5400 1150 50  0001 C CNN
+	1    5400 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5DB16155
+P 5400 1250
+F 0 "R2" V 5500 1250 50  0000 C CNN
+F 1 "5.1k" V 5400 1250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5330 1250 50  0001 C CNN
+F 3 "~" H 5400 1250 50  0001 C CNN
+	1    5400 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J1
+U 1 1 5DB0C6F8
+P 4650 1550
+F 0 "J1" H 4300 2450 50  0000 C CNN
+F 1 "USB-C" H 4350 2350 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_Palconn_UTC16-G" H 4800 1550 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 4800 1550 50  0001 C CNN
+	1    4650 1550
+	1    0    0    -1  
+$EndComp
+Text GLabel 8400 4050 0    50   Input ~ 0
+GND
+Text GLabel 6700 4050 0    50   Input ~ 0
+GND
+Wire Wire Line
+	7500 3950 7800 3950
+Wire Wire Line
+	9500 3950 9200 3950
+$Comp
+L Device:D D13
+U 1 1 5D96543D
+P 7650 4150
+F 0 "D13" H 7700 4250 50  0000 R CNN
+F 1 "1N4148W" H 7700 4350 50  0000 R CNN
+F 2 "nilgiri:D3_TH_SMD" H 7650 4150 50  0001 C CNN
+F 3 "~" H 7650 4150 50  0001 C CNN
+	1    7650 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D14
+U 1 1 5D95D9B5
+P 9350 4150
+F 0 "D14" H 9400 4300 50  0000 R CNN
+F 1 "1N4148W" H 9400 4400 50  0000 R CNN
+F 2 "nilgiri:D3_TH_SMD" H 9350 4150 50  0001 C CNN
+F 3 "~" H 9350 4150 50  0001 C CNN
+	1    9350 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8400 4050 8600 4050
+Wire Wire Line
+	6700 4050 6900 4050
+Text GLabel 8600 4150 0    50   Input ~ 0
+RB2
+Text GLabel 8600 3950 0    50   Input ~ 0
+RA2
+Text GLabel 9500 3950 2    50   Input ~ 0
+Col4
+Text GLabel 9500 4150 2    50   Input ~ 0
+Row1
+$Comp
+L Device:Rotary_Encoder_Switch EC2
+U 1 1 5D91D73A
+P 8900 4050
+F 0 "EC2" H 8900 4417 50  0000 C CNN
+F 1 "EC11E18244A5" H 8900 4326 50  0000 C CNN
+F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm" H 8750 4210 50  0001 C CNN
+F 3 "~" H 8900 4310 50  0001 C CNN
+	1    8900 4050
+	1    0    0    -1  
+$EndComp
+Text GLabel 6900 4150 0    50   Input ~ 0
+RB1
+Text GLabel 6900 3950 0    50   Input ~ 0
+RA1
+Text GLabel 7800 3950 2    50   Input ~ 0
+Col4
+Text GLabel 7800 4150 2    50   Input ~ 0
+Row0
+$Comp
+L Device:Rotary_Encoder_Switch EC1
+U 1 1 5D90A0EC
+P 7200 4050
+F 0 "EC1" H 7200 4417 50  0000 C CNN
+F 1 "EC11E18244A5" H 7200 4326 50  0000 C CNN
+F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm" H 7050 4210 50  0001 C CNN
+F 3 "~" H 7200 4310 50  0001 C CNN
+	1    7200 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 6150 4350 6150
 $Comp
 L Device:D_Schottky D32
 U 1 1 5DB88703
@@ -1327,11 +1196,153 @@ F 3 "~" H 5250 6300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1900 2300 2250 2300
+	4650 5850 4650 6150
+NoConn ~ 4650 5650
+$Comp
+L Switch:SW_SPDT SW14
+U 1 1 5DC2ECDC
+P 4850 5750
+F 0 "SW14" H 4850 5450 50  0000 L CNN
+F 1 "PWR" H 4900 5550 50  0000 L CNN
+F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 4850 5750 50  0001 C CNN
+F 3 "~" H 4850 5750 50  0001 C CNN
+	1    4850 5750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP_Small C10
+U 1 1 5DB46BCD
+P 4500 6150
+F 0 "C10" V 4300 6100 50  0000 L CNN
+F 1 "10u" V 4400 6100 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I_Pad1.58x1.35mm_HandSolder" H 4500 6150 50  0001 C CNN
+F 3 "~" H 4500 6150 50  0001 C CNN
+	1    4500 6150
+	0    1    1    0   
+$EndComp
 Wire Wire Line
-	2250 2500 1400 2500
+	4350 6150 4350 6750
+Connection ~ 4350 6150
 Wire Wire Line
-	1550 2700 2250 2700
+	4400 6150 4350 6150
 Wire Wire Line
-	4250 6150 4350 6150
+	4350 5800 4350 6150
+Wire Wire Line
+	5250 6150 4650 6150
+Wire Wire Line
+	4650 6150 4600 6150
+Connection ~ 4650 6150
+$Comp
+L Device:D_Schottky D31
+U 1 1 5DB86C8D
+P 4650 6300
+F 0 "D31" V 4600 6600 50  0000 R CNN
+F 1 "MBR120" V 4700 6750 50  0000 R CNN
+F 2 "Keebio:D_SOD123F" H 4650 6300 50  0001 C CNN
+F 3 "~" H 4650 6300 50  0001 C CNN
+	1    4650 6300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J11
+U 1 1 5DB7F512
+P 4350 5600
+F 0 "J11" V 4300 5550 50  0000 R CNN
+F 1 "BAT-" V 4200 5550 50  0000 R CNN
+F 2 "nilgiri:Hole 0.8mm" H 4350 5600 50  0001 C CNN
+F 3 "~" H 4350 5600 50  0001 C CNN
+	1    4350 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J10
+U 1 1 5DB77451
+P 5250 5750
+F 0 "J10" H 5350 5650 50  0000 R CNN
+F 1 "BAT+" H 5400 5550 50  0000 R CNN
+F 2 "nilgiri:Hole 0.8mm" H 5250 5750 50  0001 C CNN
+F 3 "~" H 5250 5750 50  0001 C CNN
+	1    5250 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT2
+U 1 1 5DB1E220
+P 5250 6650
+F 0 "BT2" H 5368 6746 50  0000 L CNN
+F 1 "3V" H 5368 6655 50  0000 L CNN
+F 2 "nilgiri:HU1632" V 5250 6710 50  0001 C CNN
+F 3 "~" V 5250 6710 50  0001 C CNN
+	1    5250 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 6750 5250 6750
+Wire Wire Line
+	4350 6750 4650 6750
+Connection ~ 4650 6750
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5DB1DB96
+P 4650 6650
+F 0 "BT1" H 4768 6746 50  0000 L CNN
+F 1 "3V" H 4768 6655 50  0000 L CNN
+F 2 "nilgiri:HU1632" V 4650 6710 50  0001 C CNN
+F 3 "~" V 4650 6710 50  0001 C CNN
+	1    4650 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:ProMicro U2
+U 1 1 5DB1FC64
+P 2850 7050
+F 0 "U2" H 2850 8087 50  0000 C CNN
+F 1 "ProMicro" H 2850 7981 50  0000 C CNN
+F 2 "kbd:ProMicro_v3" H 2950 6000 60  0001 C CNN
+F 3 "" H 2950 6000 60  0000 C CNN
+	1    2850 7050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3550 6600
+NoConn ~ 3550 6300
+Text GLabel 4250 6150 0    50   Input ~ 0
+GND
+Text GLabel 2150 6600 0    50   Input ~ 0
+GND
+Text GLabel 2150 6500 0    50   Input ~ 0
+GND
+Text GLabel 3550 6400 2    50   Input ~ 0
+GND
+Text GLabel 3550 7200 2    50   Input ~ 0
+Row2
+NoConn ~ 3550 7100
+NoConn ~ 2150 6300
+NoConn ~ 2150 6400
+NoConn ~ 2150 6700
+NoConn ~ 2150 6800
+NoConn ~ 2150 6900
+Text GLabel 3550 6500 2    50   Input ~ 0
+RESET
+Text GLabel 3550 6900 2    50   Input ~ 0
+RA2
+Text GLabel 3550 7300 2    50   Input ~ 0
+Row1
+Text GLabel 2150 7100 0    50   Input ~ 0
+Col1
+Text GLabel 3550 7000 2    50   Input ~ 0
+RB2
+Text GLabel 3550 6700 2    50   Input ~ 0
+RA1
+Text GLabel 3550 6800 2    50   Input ~ 0
+RB1
+Text GLabel 2150 7400 0    50   Input ~ 0
+Col4
+Text GLabel 2150 7300 0    50   Input ~ 0
+Col3
+Text GLabel 2150 7200 0    50   Input ~ 0
+Col2
+Text GLabel 2150 7000 0    50   Input ~ 0
+Col0
+Text GLabel 3550 7400 2    50   Input ~ 0
+Row0
 $EndSCHEMATC
