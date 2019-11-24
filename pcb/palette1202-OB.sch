@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:nilgiri 2-cache
+LIBS:palette1202-OB-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -17,10 +17,10 @@ $EndDescr
 Text GLabel 3900 2300 2    50   Input ~ 0
 Row1
 $Comp
-L Device:R R6
+L Device:R R5
 U 1 1 5D95E829
 P 1900 1000
-F 0 "R6" V 2107 1000 50  0000 C CNN
+F 0 "R5" V 2107 1000 50  0000 C CNN
 F 1 "10k" V 2016 1000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1830 1000 50  0001 C CNN
 F 3 "~" H 1900 1000 50  0001 C CNN
@@ -183,10 +183,10 @@ Wire Wire Line
 Wire Wire Line
 	900  4350 900  4250
 $Comp
-L Device:D_Schottky D30
+L Device:D_Schottky D20
 U 1 1 5D937E12
 P 2950 1400
-F 0 "D30" V 3000 1300 50  0000 R CNN
+F 0 "D20" V 3000 1300 50  0000 R CNN
 F 1 "MBR120" V 2900 1300 50  0000 R CNN
 F 2 "Keebio:D_SOD123F" H 2950 1400 50  0001 C CNN
 F 3 "~" H 2950 1400 50  0001 C CNN
@@ -848,10 +848,10 @@ Wire Wire Line
 Wire Wire Line
 	9500 3950 9200 3950
 $Comp
-L Device:D D20
+L Device:D D13
 U 1 1 5D96543D
 P 7650 4150
-F 0 "D20" H 7700 4250 50  0000 R CNN
+F 0 "D13" H 7700 4250 50  0000 R CNN
 F 1 "1N4148W" H 7700 4350 50  0000 R CNN
 F 2 "nilgiri:D3_TH_SMD" H 7650 4150 50  0001 C CNN
 F 3 "~" H 7650 4150 50  0001 C CNN
@@ -859,10 +859,10 @@ F 3 "~" H 7650 4150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:D D21
+L Device:D D14
 U 1 1 5D95D9B5
 P 9350 4150
-F 0 "D21" H 9400 4300 50  0000 R CNN
+F 0 "D14" H 9400 4300 50  0000 R CNN
 F 1 "1N4148W" H 9400 4400 50  0000 R CNN
 F 2 "nilgiri:D3_TH_SMD" H 9350 4150 50  0001 C CNN
 F 3 "~" H 9350 4150 50  0001 C CNN
@@ -1112,7 +1112,6 @@ Text GLabel 3450 3400 2    50   Input ~ 0
 SDA
 Text GLabel 3450 3300 2    50   Input ~ 0
 SCL
-NoConn ~ 4350 2450
 Wire Wire Line
 	3950 4200 3450 4200
 $Comp
@@ -1126,7 +1125,6 @@ F 3 "" H 2050 3750 50  0001 C CNN
 	1    2050 3750
 	-1   0    0    -1  
 $EndComp
-NoConn ~ 4350 3800
 Wire Wire Line
 	5350 1650 5250 1650
 Wire Wire Line
@@ -1184,4 +1182,10 @@ Wire Wire Line
 Wire Wire Line
 	3950 5500 2850 5500
 Connection ~ 2850 5500
+Wire Wire Line
+	4350 2450 4650 2450
+Connection ~ 4650 2450
+Wire Wire Line
+	4350 3800 4450 3800
+Connection ~ 4450 3800
 $EndSCHEMATC
