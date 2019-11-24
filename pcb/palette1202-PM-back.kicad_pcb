@@ -89,7 +89,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "gerber/back/"))
+      (outputdirectory "gerber/PM-back/"))
   )
 
   (net 0 "")
@@ -1137,7 +1137,7 @@
   (gr_curve (pts (xy 183.146336 124.209303) (xy 184.804396 124.209303) (xy 186.144947 122.865221) (xy 186.144947 121.210692)) (layer Edge.Cuts) (width 0.15))
   (gr_curve (pts (xy 89.145183 58.5) (xy 87.487124 58.5) (xy 86.146572 59.844082) (xy 86.146572 61.498611)) (layer Edge.Cuts) (width 0.05))
 
-  (zone (net 0) (net_name "") (layer F.Cu) (tstamp 5DB7F22E) (hatch edge 0.508)
+  (zone (net 0) (net_name "") (layer F.Cu) (tstamp 5DDB881A) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -1502,7 +1502,7 @@
       )
     )
   )
-  (zone (net 0) (net_name "") (layer B.Cu) (tstamp 5DB7F22B) (hatch edge 0.508)
+  (zone (net 0) (net_name "") (layer B.Cu) (tstamp 5DDB8817) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))

@@ -89,7 +89,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "gerber/back/"))
+      (outputdirectory "gerber/OB-back/"))
   )
 
   (net 0 "")
@@ -1003,7 +1003,7 @@
   (gr_line (start 87.259917 121.825598) (end 87.263824 121.969246) (layer Edge.Cuts) (width 0.088196))
   (gr_line (start 87.259917 121.825598) (end 87.259917 121.825598) (layer Edge.Cuts) (width 0.088196))
 
-  (zone (net 0) (net_name "") (layer F.Cu) (tstamp 5DB7F22E) (hatch edge 0.508)
+  (zone (net 0) (net_name "") (layer F.Cu) (tstamp 5DDB8851) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -1112,7 +1112,7 @@
       )
     )
   )
-  (zone (net 0) (net_name "") (layer B.Cu) (tstamp 5DB7F22B) (hatch edge 0.508)
+  (zone (net 0) (net_name "") (layer B.Cu) (tstamp 5DDB884E) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
