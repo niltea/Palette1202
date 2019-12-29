@@ -1,0 +1,15 @@
+{"keyboard":"nilgiri1202",
+"keymap":"",
+"layout":"LAYOUT",
+"layers":
+[["KC_TAB","LGUI(KC_A)","KC_E","KC_P","LGUI(KC_S)",
+"MO(1)","KC_M","KC_BSPC","KC_B","KC_NO",
+"KC_NO","KC_LSFT","KC_LGUI","KC_SPC","LGUI(KC_Z)"],
+
+["MO(2)","LGUI(KC_D)","KC_NO","KC_I","LGUI(KC_0)",
+"KC_TRNS","LGUI(KC_D)","KC_F","KC_K","LGUI(KC_GRV)",
+"KC_NO","KC_R","KC_H","SGUI(KC_Z)","KC_TRNS"],
+
+["ADV_ID0","ADV_ID1","AD_WO_L","BATT_LV","KC_TRNS",
+"DEL_ID0","DEL_ID1","ENT_SLP","ENT_DFU","USB_DIS",
+"USB_EN","BLE_DIS","BLE_EN",]]}

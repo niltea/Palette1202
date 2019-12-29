@@ -1,0 +1,13 @@
+{"config":{"version":2,
+"device_info":{"vid":"0x0000","pid":"0x0000","name":"nilgiri1202","manufacture":"Takashi Shibusawa","description":"A left hand device with rotary encoder"},
+"matrix":{"rows":32,"cols":32,"device_rows":3,"device_cols":5,"debounce":1,"is_left_hand":1,"diode_direction":0,"row_pins":[8,9,10,11,12],"col_pins":[13,14,15],
+"layout":[
+  1,  2,  3,  4,  5,  0,
+  6,  7,  8,  9, 10,  0,
+ 11, 12, 13, 14]},
+"mode":"SINGLE","startup":0,
+"peripheral":{"max_interval":60,"min_interval":30,"slave_latency":7},
+"central":{"max_interval":60,"min_interval":30,"slave_latency":7},
+"led":{"pin":255,"num":128},
+"keymap":{"locale":"US","use_ascii":0},
+"reserved":[0,0,0,0,0,0,0,0]}}
