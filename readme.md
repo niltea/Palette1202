@@ -4,13 +4,13 @@ English follows Japanese.
 
 --------------------
 
-Nilgiri12-02EC�ϡ����饹�ȥ졼�����Τ���κ���ǥХ����Ǥ���
-(Clip studio Paint)[https://www.clipstudio.net]�䡢(Adobe Photoshop)[https://www.adobe.com/jp/products/photoshop.html]����Ѥ���������Ŭ�˹Ԥ������߷פ��졢  
-�Ƽ亮�硼�ȥ��åȤ򲡤�����Υ����������Ƥ��뤳�ȤϤ������
-�Ĥޤߤ����뤳�Ȥǡ��֥饷���������ѹ��䥭���Х��γ��硦�̾����Ŭ�˹Ԥ����Ȥ��Ǥ��ޤ���
+Nilgiri12-02ECは、イラストレーターのための左手デバイスです。
+(Clip studio Paint)[https://www.clipstudio.net]や、(Adobe Photoshop)[https://www.adobe.com/jp/products/photoshop.html]を使用した描画を快適に行うため設計され、  
+各種ショートカットを押すためのキーを備えていることはもちろん、
+つまみを操作することで、ブラシサイズの変更やキャンバスの拡大・縮小を快適に行うことができます。
 
-����ѥ��Ȥʥ��������߷פ���Ƥ��뤿�ᡢ�ǥ����ξ�˱վ����֥�åȤ����äƤ����ˤʤ�ޤ���
-�ޤ������ץ��������ӥ��åȤ��ɲä��뤳�Ȥ�(BLE Micro Pro)[https://yushakobo.jp/shop/ble-micro-pro/]�ˤ��б�����iPad�Ǥ�Ʊ���������褹�뤳�Ȥ��Ǥ��ޤ���
+コンパクトなサイズに設計されているため、デスクの上に液晶タブレットがあっても邪魔になりません。
+また、オプションの電池キットを追加することで(BLE Micro Pro)[https://yushakobo.jp/shop/ble-micro-pro/]にも対応し、iPadでも同じ操作感で描画することができます。
 
 --------------------
 
