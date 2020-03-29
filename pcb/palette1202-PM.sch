@@ -14,10 +14,10 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 1650 950  0    50   Input ~ 0
+Text GLabel 1250 950  0    50   Input ~ 0
 RESET
 Wire Wire Line
-	1650 950  2200 950 
+	1250 950  1800 950 
 $Comp
 L Mechanical:MountingHole H6
 U 1 1 5DB4B5D0
@@ -75,11 +75,6 @@ F 3 "~" H 9350 6150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9000 1650 10000 1650
-Wire Wire Line
-	9400 2050 9400 2750
-Connection ~ 9400 1350
-Wire Wire Line
-	9400 900  9400 1350
 Text GLabel 9400 900  1    50   Input ~ 0
 Col3
 Wire Wire Line
@@ -88,16 +83,13 @@ Wire Wire Line
 	9000 2350 10000 2350
 Connection ~ 8000 2350
 Connection ~ 8000 1650
-Connection ~ 7400 1350
-Wire Wire Line
-	7400 1350 7400 900 
 $Comp
 L Device:D D12
 U 1 1 5D901D60
 P 11000 2900
 F 0 "D12" V 11046 2821 50  0000 R CNN
 F 1 "1N4148W" V 10955 2821 50  0000 R CNN
-F 2 "nilgiri:D3_TH_SMD" H 11000 2900 50  0001 C CNN
+F 2 "kbd:D3_TH_SMD" H 11000 2900 50  0001 C CNN
 F 3 "~" H 11000 2900 50  0001 C CNN
 	1    11000 2900
 	0    -1   -1   0   
@@ -108,7 +100,7 @@ U 1 1 5D901D5A
 P 10700 2750
 F 0 "SW12" H 10700 3005 50  0000 C CNN
 F 1 "SW_PUSH" H 10700 2914 50  0000 C CNN
-F 2 "nilgiri:CherryMX_Choc_Hotswap-1Side" H 10700 2750 50  0001 C CNN
+F 2 "nilgiri:CherryMX_Choc_Hotswap" H 10700 2750 50  0001 C CNN
 F 3 "" H 10700 2750 50  0000 C CNN
 	1    10700 2750
 	1    0    0    -1  
@@ -119,7 +111,7 @@ U 1 1 5D901478
 P 10000 2900
 F 0 "D11" V 10046 2821 50  0000 R CNN
 F 1 "1N4148W" V 9955 2821 50  0000 R CNN
-F 2 "nilgiri:D3_TH_SMD" H 10000 2900 50  0001 C CNN
+F 2 "kbd:D3_TH_SMD" H 10000 2900 50  0001 C CNN
 F 3 "~" H 10000 2900 50  0001 C CNN
 	1    10000 2900
 	0    -1   -1   0   
@@ -130,27 +122,20 @@ U 1 1 5D901472
 P 9700 2750
 F 0 "SW11" H 9700 3005 50  0000 C CNN
 F 1 "SW_PUSH" H 9700 2914 50  0000 C CNN
-F 2 "nilgiri:CherryMX_Choc_Hotswap-1Side" H 9700 2750 50  0001 C CNN
+F 2 "nilgiri:CherryMX_Choc_Hotswap" H 9700 2750 50  0001 C CNN
 F 3 "" H 9700 2750 50  0000 C CNN
 	1    9700 2750
 	1    0    0    -1  
 $EndComp
-Connection ~ 8400 1350
-Wire Wire Line
-	8400 1350 8400 2050
-Wire Wire Line
-	8400 900  8400 1350
 Wire Wire Line
 	7000 1650 8000 1650
-Wire Wire Line
-	9400 1350 9400 2050
 $Comp
 L Device:D D9
 U 1 1 5D8FB426
 P 10000 1500
 F 0 "D9" V 10046 1421 50  0000 R CNN
 F 1 "1N4148W" V 9955 1421 50  0000 R CNN
-F 2 "nilgiri:D3_TH_SMD" H 10000 1500 50  0001 C CNN
+F 2 "kbd:D3_TH_SMD" H 10000 1500 50  0001 C CNN
 F 3 "~" H 10000 1500 50  0001 C CNN
 	1    10000 1500
 	0    -1   -1   0   
@@ -161,7 +146,7 @@ U 1 1 5D8FB420
 P 9700 1350
 F 0 "SW9" H 9700 1605 50  0000 C CNN
 F 1 "SW_PUSH" H 9700 1514 50  0000 C CNN
-F 2 "nilgiri:CherryMX_Choc_Hotswap-1Side" H 9700 1350 50  0001 C CNN
+F 2 "nilgiri:CherryMX_Choc_Hotswap" H 9700 1350 50  0001 C CNN
 F 3 "" H 9700 1350 50  0000 C CNN
 	1    9700 1350
 	1    0    0    -1  
@@ -172,7 +157,7 @@ U 1 1 5D8FB41A
 P 10000 2200
 F 0 "D10" V 10046 2121 50  0000 R CNN
 F 1 "1N4148W" V 9955 2121 50  0000 R CNN
-F 2 "nilgiri:D3_TH_SMD" H 10000 2200 50  0001 C CNN
+F 2 "kbd:D3_TH_SMD" H 10000 2200 50  0001 C CNN
 F 3 "~" H 10000 2200 50  0001 C CNN
 	1    10000 2200
 	0    -1   -1   0   
@@ -183,7 +168,7 @@ U 1 1 5D8FB414
 P 9700 2050
 F 0 "SW10" H 9700 2305 50  0000 C CNN
 F 1 "SW_PUSH" H 9700 2214 50  0000 C CNN
-F 2 "nilgiri:CherryMX_Choc_Hotswap-1Side" H 9700 2050 50  0001 C CNN
+F 2 "nilgiri:CherryMX_Choc_Hotswap" H 9700 2050 50  0001 C CNN
 F 3 "" H 9700 2050 50  0000 C CNN
 	1    9700 2050
 	1    0    0    -1  
@@ -194,7 +179,7 @@ U 1 1 5D8FB40D
 P 9000 2200
 F 0 "D7" V 9046 2121 50  0000 R CNN
 F 1 "1N4148W" V 8955 2121 50  0000 R CNN
-F 2 "nilgiri:D3_TH_SMD" H 9000 2200 50  0001 C CNN
+F 2 "kbd:D3_TH_SMD" H 9000 2200 50  0001 C CNN
 F 3 "~" H 9000 2200 50  0001 C CNN
 	1    9000 2200
 	0    -1   -1   0   
@@ -205,7 +190,7 @@ U 1 1 5D8FB407
 P 8700 2050
 F 0 "SW7" H 8700 2305 50  0000 C CNN
 F 1 "SW_PUSH" H 8700 2214 50  0000 C CNN
-F 2 "nilgiri:CherryMX_Choc_Hotswap-1Side" H 8700 2050 50  0001 C CNN
+F 2 "nilgiri:CherryMX_Choc_Hotswap" H 8700 2050 50  0001 C CNN
 F 3 "" H 8700 2050 50  0000 C CNN
 	1    8700 2050
 	1    0    0    -1  
@@ -216,7 +201,7 @@ U 1 1 5D8FB401
 P 9000 1500
 F 0 "D6" V 9046 1421 50  0000 R CNN
 F 1 "1N4148W" V 8955 1421 50  0000 R CNN
-F 2 "nilgiri:D3_TH_SMD" H 9000 1500 50  0001 C CNN
+F 2 "kbd:D3_TH_SMD" H 9000 1500 50  0001 C CNN
 F 3 "~" H 9000 1500 50  0001 C CNN
 	1    9000 1500
 	0    -1   -1   0   
@@ -227,7 +212,7 @@ U 1 1 5D8FB3FB
 P 8700 1350
 F 0 "SW6" H 8700 1605 50  0000 C CNN
 F 1 "SW_PUSH" H 8700 1514 50  0000 C CNN
-F 2 "nilgiri:CherryMX_Choc_Hotswap-1Side" H 8700 1350 50  0001 C CNN
+F 2 "nilgiri:CherryMX_Choc_Hotswap" H 8700 1350 50  0001 C CNN
 F 3 "" H 8700 1350 50  0000 C CNN
 	1    8700 1350
 	1    0    0    -1  
@@ -240,17 +225,13 @@ Text GLabel 6150 3050 0    50   Input ~ 0
 Row2
 Wire Wire Line
 	7000 2350 8000 2350
-Wire Wire Line
-	8400 2750 8400 2050
-Wire Wire Line
-	7400 1350 7400 2050
 $Comp
 L Device:D D8
 U 1 1 5D8E4D64
 P 9000 2900
 F 0 "D8" V 9046 2821 50  0000 R CNN
 F 1 "1N4148W" V 8955 2821 50  0000 R CNN
-F 2 "nilgiri:D3_TH_SMD" H 9000 2900 50  0001 C CNN
+F 2 "kbd:D3_TH_SMD" H 9000 2900 50  0001 C CNN
 F 3 "~" H 9000 2900 50  0001 C CNN
 	1    9000 2900
 	0    -1   -1   0   
@@ -261,7 +242,7 @@ U 1 1 5D8E4D5E
 P 8700 2750
 F 0 "SW8" H 8700 3005 50  0000 C CNN
 F 1 "SW_PUSH" H 8700 2914 50  0000 C CNN
-F 2 "nilgiri:CherryMX_Choc_Hotswap-1Side" H 8700 2750 50  0001 C CNN
+F 2 "nilgiri:CherryMX_Choc_Hotswap" H 8700 2750 50  0001 C CNN
 F 3 "" H 8700 2750 50  0000 C CNN
 	1    8700 2750
 	1    0    0    -1  
@@ -272,7 +253,7 @@ U 1 1 5D8E00EC
 P 8000 1500
 F 0 "D3" V 8046 1421 50  0000 R CNN
 F 1 "1N4148W" V 7955 1421 50  0000 R CNN
-F 2 "nilgiri:D3_TH_SMD" H 8000 1500 50  0001 C CNN
+F 2 "kbd:D3_TH_SMD" H 8000 1500 50  0001 C CNN
 F 3 "~" H 8000 1500 50  0001 C CNN
 	1    8000 1500
 	0    -1   -1   0   
@@ -283,7 +264,7 @@ U 1 1 5D8E00E6
 P 7700 1350
 F 0 "SW3" H 7700 1605 50  0000 C CNN
 F 1 "SW_PUSH" H 7700 1514 50  0000 C CNN
-F 2 "nilgiri:CherryMX_Choc_Hotswap-1Side" H 7700 1350 50  0001 C CNN
+F 2 "nilgiri:CherryMX_Choc_Hotswap" H 7700 1350 50  0001 C CNN
 F 3 "" H 7700 1350 50  0000 C CNN
 	1    7700 1350
 	1    0    0    -1  
@@ -294,7 +275,7 @@ U 1 1 5D8DF6C2
 P 8000 2200
 F 0 "D4" V 8046 2121 50  0000 R CNN
 F 1 "1N4148W" V 7955 2121 50  0000 R CNN
-F 2 "nilgiri:D3_TH_SMD" H 8000 2200 50  0001 C CNN
+F 2 "kbd:D3_TH_SMD" H 8000 2200 50  0001 C CNN
 F 3 "~" H 8000 2200 50  0001 C CNN
 	1    8000 2200
 	0    -1   -1   0   
@@ -305,21 +286,18 @@ U 1 1 5D8DF6BC
 P 7700 2050
 F 0 "SW4" H 7700 2305 50  0000 C CNN
 F 1 "SW_PUSH" H 7700 2214 50  0000 C CNN
-F 2 "nilgiri:CherryMX_Choc_Hotswap-1Side" H 7700 2050 50  0001 C CNN
+F 2 "nilgiri:CherryMX_Choc_Hotswap" H 7700 2050 50  0001 C CNN
 F 3 "" H 7700 2050 50  0000 C CNN
 	1    7700 2050
 	1    0    0    -1  
 $EndComp
-Connection ~ 6400 1350
-Wire Wire Line
-	6400 2050 6400 1350
 $Comp
 L Device:D D2
 U 1 1 5D8D8D8A
 P 7000 2200
 F 0 "D2" V 7046 2121 50  0000 R CNN
 F 1 "1N4148W" V 6955 2121 50  0000 R CNN
-F 2 "nilgiri:D3_TH_SMD" H 7000 2200 50  0001 C CNN
+F 2 "kbd:D3_TH_SMD" H 7000 2200 50  0001 C CNN
 F 3 "~" H 7000 2200 50  0001 C CNN
 	1    7000 2200
 	0    -1   -1   0   
@@ -330,22 +308,20 @@ U 1 1 5D8D8D84
 P 6700 2050
 F 0 "SW2" H 6700 2305 50  0000 C CNN
 F 1 "SW_PUSH" H 6700 2214 50  0000 C CNN
-F 2 "nilgiri:CherryMX_Choc_Hotswap-1Side" H 6700 2050 50  0001 C CNN
+F 2 "nilgiri:CherryMX_Choc_Hotswap" H 6700 2050 50  0001 C CNN
 F 3 "" H 6700 2050 50  0000 C CNN
 	1    6700 2050
 	1    0    0    -1  
 $EndComp
 Text GLabel 6150 1650 0    50   Input ~ 0
 Row0
-Wire Wire Line
-	6400 900  6400 1350
 $Comp
 L Device:D D1
 U 1 1 5D8D2937
 P 7000 1500
 F 0 "D1" V 7046 1421 50  0000 R CNN
 F 1 "1N4148W" V 6955 1421 50  0000 R CNN
-F 2 "nilgiri:D3_TH_SMD" H 7000 1500 50  0001 C CNN
+F 2 "kbd:D3_TH_SMD" H 7000 1500 50  0001 C CNN
 F 3 "~" H 7000 1500 50  0001 C CNN
 	1    7000 1500
 	0    -1   -1   0   
@@ -356,7 +332,7 @@ U 1 1 5D8CF41D
 P 6700 1350
 F 0 "SW1" H 6700 1605 50  0000 C CNN
 F 1 "SW_PUSH" H 6700 1514 50  0000 C CNN
-F 2 "nilgiri:CherryMX_Choc_Hotswap-1Side" H 6700 1350 50  0001 C CNN
+F 2 "nilgiri:CherryMX_Choc_Hotswap" H 6700 1350 50  0001 C CNN
 F 3 "" H 6700 1350 50  0000 C CNN
 	1    6700 1350
 	1    0    0    -1  
@@ -365,40 +341,36 @@ Text GLabel 6400 900  1    50   Input ~ 0
 Col0
 Text GLabel 6150 2350 0    50   Input ~ 0
 Row1
-Text GLabel 8400 4050 0    50   Input ~ 0
+Text GLabel 8450 4050 0    50   Input ~ 0
 GND
-Text GLabel 6700 4050 0    50   Input ~ 0
+Text GLabel 6150 4050 0    50   Input ~ 0
 GND
 Wire Wire Line
 	7500 3950 7800 3950
 Wire Wire Line
-	9500 3950 9200 3950
-Wire Wire Line
-	8400 4050 8600 4050
-Wire Wire Line
-	6700 4050 6900 4050
-Text GLabel 8600 4150 0    50   Input ~ 0
+	10100 3950 9800 3950
+Text GLabel 8650 4150 0    50   Input ~ 0
 RB2
-Text GLabel 8600 3950 0    50   Input ~ 0
+Text GLabel 8650 3950 0    50   Input ~ 0
 RA2
-Text GLabel 9500 3950 2    50   Input ~ 0
+Text GLabel 10100 3950 2    50   Input ~ 0
 Col4
-Text GLabel 9500 4150 2    50   Input ~ 0
+Text GLabel 10100 4150 2    50   Input ~ 0
 Row1
 $Comp
 L Device:Rotary_Encoder_Switch EC2
 U 1 1 5D91D73A
-P 8900 4050
-F 0 "EC2" H 8900 4417 50  0000 C CNN
-F 1 "EC11E18244A5" H 8900 4326 50  0000 C CNN
-F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm" H 8750 4210 50  0001 C CNN
-F 3 "~" H 8900 4310 50  0001 C CNN
-	1    8900 4050
+P 9500 4050
+F 0 "EC2" H 9500 4417 50  0000 C CNN
+F 1 "EC11E18244A5" H 9500 4326 50  0000 C CNN
+F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm" H 9350 4210 50  0001 C CNN
+F 3 "~" H 9500 4310 50  0001 C CNN
+	1    9500 4050
 	1    0    0    -1  
 $EndComp
-Text GLabel 6900 4150 0    50   Input ~ 0
+Text GLabel 6350 4150 0    50   Input ~ 0
 RB1
-Text GLabel 6900 3950 0    50   Input ~ 0
+Text GLabel 6350 3950 0    50   Input ~ 0
 RA1
 Text GLabel 7800 3950 2    50   Input ~ 0
 Col4
@@ -415,49 +387,38 @@ F 3 "~" H 7200 4310 50  0001 C CNN
 	1    7200 4050
 	1    0    0    -1  
 $EndComp
-NoConn ~ 4350 2750
-$Comp
-L Device:CP_Small C10
-U 1 1 5DB46BCD
-P 4850 3250
-F 0 "C10" V 4650 3200 50  0000 L CNN
-F 1 "100u" V 4750 3200 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I_Pad1.58x1.35mm_HandSolder" H 4850 3250 50  0001 C CNN
-F 3 "~" H 4850 3250 50  0001 C CNN
-	1    4850 3250
-	1    0    0    -1  
-$EndComp
+NoConn ~ 4350 4500
 $Comp
 L Connector:Conn_01x01_Female J11
 U 1 1 5DB7F512
-P 5200 2650
-F 0 "J11" V 5150 2600 50  0000 R CNN
-F 1 "BAT-" V 5050 2600 50  0000 R CNN
-F 2 "nilgiri:Hole 0.8mm" H 5200 2650 50  0001 C CNN
-F 3 "~" H 5200 2650 50  0001 C CNN
-	1    5200 2650
+P 5200 4400
+F 0 "J11" V 5150 4350 50  0000 R CNN
+F 1 "BAT-" V 5050 4350 50  0000 R CNN
+F 2 "nilgiri:Hole 0.8mm" H 5200 4400 50  0001 C CNN
+F 3 "~" H 5200 4400 50  0001 C CNN
+	1    5200 4400
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector:Conn_01x01_Female J10
 U 1 1 5DB77451
-P 4850 2650
-F 0 "J10" V 4800 2600 50  0000 R CNN
-F 1 "BAT+" V 4700 2600 50  0000 R CNN
-F 2 "nilgiri:Hole 0.8mm" H 4850 2650 50  0001 C CNN
-F 3 "~" H 4850 2650 50  0001 C CNN
-	1    4850 2650
+P 4850 4400
+F 0 "J10" V 4800 4350 50  0000 R CNN
+F 1 "BAT+" V 4700 4350 50  0000 R CNN
+F 2 "nilgiri:Hole 0.8mm" H 4850 4400 50  0001 C CNN
+F 3 "~" H 4850 4400 50  0001 C CNN
+	1    4850 4400
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:Battery_Cell BT1
 U 1 1 5DB1DB96
-P 4250 3700
-F 0 "BT1" H 4368 3796 50  0000 L CNN
-F 1 "3V" H 4368 3705 50  0000 L CNN
-F 2 "nilgiri:HU1632" V 4250 3760 50  0001 C CNN
-F 3 "~" V 4250 3760 50  0001 C CNN
-	1    4250 3700
+P 4250 5550
+F 0 "BT1" H 4368 5646 50  0000 L CNN
+F 1 "3V" H 4368 5555 50  0000 L CNN
+F 2 "nilgiri:HU1632" V 4250 5610 50  0001 C CNN
+F 3 "~" V 4250 5610 50  0001 C CNN
+	1    4250 5550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -466,7 +427,7 @@ U 1 1 5DB1FC64
 P 2200 3350
 F 0 "U2" H 2200 4387 50  0000 C CNN
 F 1 "ProMicro" H 2200 4281 50  0000 C CNN
-F 2 "kbd:ProMicro_v3" H 2300 2300 60  0001 C CNN
+F 2 "kbd:ProMicro_v2" H 2300 2300 60  0000 C CNN
 F 3 "" H 2300 2300 60  0000 C CNN
 	1    2200 3350
 	1    0    0    -1  
@@ -509,12 +470,12 @@ SCL
 $Comp
 L Connector:Conn_01x04_Female J4
 U 1 1 5DD523BB
-P 3300 1100
-F 0 "J4" H 3328 1076 50  0000 L CNN
-F 1 "OLED" H 3328 985 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3300 1100 50  0001 C CNN
-F 3 "~" H 3300 1100 50  0001 C CNN
-	1    3300 1100
+P 4750 1100
+F 0 "J4" H 4778 1076 50  0000 L CNN
+F 1 "OLED" H 4778 985 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4750 1100 50  0001 C CNN
+F 3 "~" H 4750 1100 50  0001 C CNN
+	1    4750 1100
 	1    0    0    -1  
 $EndComp
 Text GLabel 3100 1000 0    50   Input ~ 0
@@ -538,7 +499,6 @@ F 3 "" H 1000 3050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1500 2900 1500 2800
-Connection ~ 1500 2800
 $Comp
 L power:GND #PWR0106
 U 1 1 5DD907F3
@@ -555,12 +515,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0107
 U 1 1 5DD9CC64
-P 5200 3950
-F 0 "#PWR0107" H 5200 3700 50  0001 C CNN
-F 1 "GND" V 5205 3822 50  0000 R CNN
-F 2 "" H 5200 3950 50  0001 C CNN
-F 3 "" H 5200 3950 50  0001 C CNN
-	1    5200 3950
+P 5200 5800
+F 0 "#PWR0107" H 5200 5550 50  0001 C CNN
+F 1 "GND" V 5205 5672 50  0000 R CNN
+F 2 "" H 5200 5800 50  0001 C CNN
+F 3 "" H 5200 5800 50  0001 C CNN
+	1    5200 5800
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -576,17 +536,13 @@ F 3 "" H 2850 1350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2850 1300 2850 1350
-Wire Wire Line
-	3100 1300 2850 1300
-Text GLabel 3100 1200 0    50   Input ~ 0
+Text GLabel 2350 850  0    50   Input ~ 0
 VCC
 Text GLabel 10400 900  1    50   Input ~ 0
 Col4
 Wire Wire Line
 	10400 900  10400 2750
-Connection ~ 9400 2050
 Connection ~ 10000 3050
-Connection ~ 8400 2050
 Wire Wire Line
 	9000 3050 10000 3050
 $Comp
@@ -595,7 +551,7 @@ U 1 1 5D904BF4
 P 7700 2750
 F 0 "SW5" H 7700 3005 50  0000 C CNN
 F 1 "SW_PUSH" H 7700 2914 50  0000 C CNN
-F 2 "nilgiri:CherryMX_Choc_Hotswap-1Side" H 7700 2750 50  0001 C CNN
+F 2 "nilgiri:CherryMX_Choc_Hotswap" H 7700 2750 50  0001 C CNN
 F 3 "" H 7700 2750 50  0000 C CNN
 	1    7700 2750
 	1    0    0    -1  
@@ -606,14 +562,11 @@ U 1 1 5D904BFA
 P 8000 2900
 F 0 "D5" V 8046 2821 50  0000 R CNN
 F 1 "1N4148W" V 7955 2821 50  0000 R CNN
-F 2 "nilgiri:D3_TH_SMD" H 8000 2900 50  0001 C CNN
+F 2 "kbd:D3_TH_SMD" H 8000 2900 50  0001 C CNN
 F 3 "~" H 8000 2900 50  0001 C CNN
 	1    8000 2900
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	7400 2750 7400 2050
-Connection ~ 7400 2050
 Wire Wire Line
 	8000 2350 9000 2350
 Connection ~ 9000 2350
@@ -646,115 +599,92 @@ Connection ~ 7000 2350
 $Comp
 L Switch:SW_Push SW20
 U 1 1 5D9206B8
-P 1800 1450
-F 0 "SW20" H 1800 1735 50  0000 C CNN
-F 1 "SW_RESET" H 1800 1644 50  0000 C CNN
-F 2 "kbd:ResetSW_1side" H 1800 1650 50  0001 C CNN
-F 3 "~" H 1800 1650 50  0001 C CNN
-	1    1800 1450
+P 1400 1450
+F 0 "SW20" H 1400 1735 50  0000 C CNN
+F 1 "SW_RESET" H 1400 1644 50  0000 C CNN
+F 2 "kbd:ResetSW_1side" H 1400 1650 50  0001 C CNN
+F 3 "~" H 1400 1650 50  0001 C CNN
+	1    1400 1450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1400 1550 1400 1450
+	1000 1550 1000 1450
 $Comp
 L power:GND #PWR0104
 U 1 1 5DD738EF
-P 1400 1550
-F 0 "#PWR0104" H 1400 1300 50  0001 C CNN
-F 1 "GND" V 1405 1422 50  0000 R CNN
-F 2 "" H 1400 1550 50  0001 C CNN
-F 3 "" H 1400 1550 50  0001 C CNN
-	1    1400 1550
+P 1000 1550
+F 0 "#PWR0104" H 1000 1300 50  0001 C CNN
+F 1 "GND" V 1005 1422 50  0000 R CNN
+F 2 "" H 1000 1550 50  0001 C CNN
+F 3 "" H 1000 1550 50  0001 C CNN
+	1    1000 1550
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	2000 1450 2200 1450
+	1600 1450 1800 1450
 Wire Wire Line
-	1400 1450 1600 1450
+	1000 1450 1200 1450
 Wire Wire Line
-	2200 950  2200 1450
+	1800 950  1800 1450
 Text GLabel 2900 2900 2    50   Input ~ 0
 VCC
 $Comp
 L Device:D_Schottky D30
 U 1 1 5DD7EBC8
-P 4550 3350
-F 0 "D30" V 4500 3650 50  0000 R CNN
-F 1 "MBR120" V 4600 3800 50  0000 R CNN
-F 2 "Keebio:D_SOD123F" H 4550 3350 50  0001 C CNN
-F 3 "~" H 4550 3350 50  0001 C CNN
-	1    4550 3350
+P 4550 5100
+F 0 "D30" V 4500 5400 50  0000 R CNN
+F 1 "MBR120" V 4600 5550 50  0000 R CNN
+F 2 "kbd:D3_SMD" H 4550 5100 50  0001 C CNN
+F 3 "~" H 4550 5100 50  0001 C CNN
+	1    4550 5100
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	4250 3800 4550 3800
-$Comp
-L Device:Battery_Cell BT2
-U 1 1 5DD7EBCF
-P 4550 3700
-F 0 "BT2" H 4668 3796 50  0000 L CNN
-F 1 "3V" H 4668 3705 50  0000 L CNN
-F 2 "nilgiri:HU1632" V 4550 3760 50  0001 C CNN
-F 3 "~" V 4550 3760 50  0001 C CNN
-	1    4550 3700
-	1    0    0    -1  
-$EndComp
+	4250 4950 4550 4950
 Wire Wire Line
-	4250 3200 4550 3200
+	4750 4600 4850 4600
 Wire Wire Line
-	4850 3350 4850 3800
+	4850 4900 4850 4600
+Connection ~ 4850 4600
+Connection ~ 4250 4950
 Wire Wire Line
-	4850 3800 4550 3800
-Connection ~ 4550 3800
-Wire Wire Line
-	4750 2850 4850 2850
-Wire Wire Line
-	4850 3150 4850 2850
-Connection ~ 4850 2850
-Connection ~ 4250 3200
-Wire Wire Line
-	4250 2950 4250 3200
+	4250 4700 4250 4950
 $Comp
 L Device:D_Schottky D31
 U 1 1 5DB86C8D
-P 4250 3350
-F 0 "D31" V 4200 3650 50  0000 R CNN
-F 1 "MBR120" V 4300 3800 50  0000 R CNN
-F 2 "Keebio:D_SOD123F" H 4250 3350 50  0001 C CNN
-F 3 "~" H 4250 3350 50  0001 C CNN
-	1    4250 3350
+P 4250 5100
+F 0 "D31" V 4200 5400 50  0000 R CNN
+F 1 "MBR120" V 4300 5550 50  0000 R CNN
+F 2 "kbd:D3_SMD" H 4250 5100 50  0001 C CNN
+F 3 "~" H 4250 5100 50  0001 C CNN
+	1    4250 5100
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5200 2850 5200 3800
-Wire Wire Line
-	5200 3800 4850 3800
-Connection ~ 4850 3800
-Connection ~ 5200 3800
+Connection ~ 5200 5650
 $Comp
 L Switch:SW_SPDT SW21
 U 1 1 5DC2ECDC
-P 4550 2850
-F 0 "SW21" H 4550 2550 50  0000 L CNN
-F 1 "PWR" H 4600 2650 50  0000 L CNN
-F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 4550 2850 50  0001 C CNN
-F 3 "~" H 4550 2850 50  0001 C CNN
-	1    4550 2850
+P 4550 4600
+F 0 "SW21" H 4550 4300 50  0000 L CNN
+F 1 "PWR" H 4600 4400 50  0000 L CNN
+F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 4550 4600 50  0001 C CNN
+F 3 "~" H 4550 4600 50  0001 C CNN
+	1    4550 4600
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4350 2950 4250 2950
+	4350 4700 4250 4700
 Wire Wire Line
-	5200 3800 5200 3950
+	5200 5650 5200 5800
 $Comp
 L Device:D D14
 U 1 1 5D95D9B5
-P 9350 4150
-F 0 "D14" H 9400 4300 50  0000 R CNN
-F 1 "1N4148W" H 9400 4400 50  0000 R CNN
-F 2 "nilgiri:D3_TH_SMD" H 9350 4150 50  0001 C CNN
-F 3 "~" H 9350 4150 50  0001 C CNN
-	1    9350 4150
+P 9950 4150
+F 0 "D14" H 10000 4300 50  0000 R CNN
+F 1 "1N4148W" H 10000 4400 50  0000 R CNN
+F 2 "kbd:D3_TH_SMD" H 9950 4150 50  0001 C CNN
+F 3 "~" H 9950 4150 50  0001 C CNN
+	1    9950 4150
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -763,9 +693,538 @@ U 1 1 5D96543D
 P 7650 4150
 F 0 "D13" H 7700 4250 50  0000 R CNN
 F 1 "1N4148W" H 7700 4350 50  0000 R CNN
-F 2 "nilgiri:D3_TH_SMD" H 7650 4150 50  0001 C CNN
+F 2 "kbd:D3_TH_SMD" H 7650 4150 50  0001 C CNN
 F 3 "~" H 7650 4150 50  0001 C CNN
 	1    7650 4150
 	-1   0    0    1   
 $EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP101
+U 1 1 5E166C0A
+P 6650 3900
+F 0 "JP101" H 6650 4105 50  0000 C CNN
+F 1 "LEFT-B1" H 6650 4014 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 6650 3900 50  0001 C CNN
+F 3 "~" H 6650 3900 50  0001 C CNN
+	1    6650 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP100
+U 1 1 5E16A758
+P 6650 3600
+F 0 "JP100" H 6650 3805 50  0000 C CNN
+F 1 "LEFT-A1" H 6650 3714 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 6650 3600 50  0001 C CNN
+F 3 "~" H 6650 3600 50  0001 C CNN
+	1    6650 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3600 6400 3600
+Wire Wire Line
+	6400 3950 6350 3950
+Wire Wire Line
+	6500 3900 6450 3900
+Wire Wire Line
+	6450 3900 6450 4150
+Wire Wire Line
+	6450 4150 6350 4150
+$Comp
+L Jumper:SolderJumper_2_Open JP110
+U 1 1 5E177040
+P 6650 4400
+F 0 "JP110" H 6650 4605 50  0000 C CNN
+F 1 "RIGHT-B1" H 6650 4514 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 6650 4400 50  0001 C CNN
+F 3 "~" H 6650 4400 50  0001 C CNN
+	1    6650 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP111
+U 1 1 5E177F2C
+P 6650 4700
+F 0 "JP111" H 6650 4905 50  0000 C CNN
+F 1 "RIGHT-A1" H 6650 4814 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 6650 4700 50  0001 C CNN
+F 3 "~" H 6650 4700 50  0001 C CNN
+	1    6650 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 3950 6850 3950
+Connection ~ 6900 4150
+Wire Wire Line
+	6850 3600 6800 3600
+Connection ~ 6850 3950
+Wire Wire Line
+	6800 3900 6800 4150
+Wire Wire Line
+	6800 4150 6900 4150
+Wire Wire Line
+	6800 4400 6850 4400
+Wire Wire Line
+	6800 4700 6900 4700
+Wire Wire Line
+	6500 4400 6500 4150
+Connection ~ 6450 4150
+Wire Wire Line
+	6400 4700 6500 4700
+Wire Wire Line
+	6500 4150 6450 4150
+Wire Wire Line
+	6900 4150 6900 4700
+Wire Wire Line
+	6850 3950 6850 4400
+Wire Wire Line
+	6400 3950 6400 4700
+Wire Wire Line
+	6850 3600 6850 3950
+Wire Wire Line
+	6400 3950 6400 3600
+Connection ~ 6400 3950
+Wire Wire Line
+	6150 4050 6900 4050
+$Comp
+L Jumper:SolderJumper_2_Bridged JP121
+U 1 1 5E1BA52C
+P 8950 3900
+F 0 "JP121" H 8950 4105 50  0000 C CNN
+F 1 "LEFT-B2" H 8950 4014 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 8950 3900 50  0001 C CNN
+F 3 "~" H 8950 3900 50  0001 C CNN
+	1    8950 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP120
+U 1 1 5E1BA532
+P 8950 3600
+F 0 "JP120" H 8950 3805 50  0000 C CNN
+F 1 "LEFT-A2" H 8950 3714 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 8950 3600 50  0001 C CNN
+F 3 "~" H 8950 3600 50  0001 C CNN
+	1    8950 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 3600 8700 3600
+Wire Wire Line
+	8700 3950 8650 3950
+Wire Wire Line
+	8800 3900 8750 3900
+Wire Wire Line
+	8750 3900 8750 4150
+Wire Wire Line
+	8750 4150 8650 4150
+$Comp
+L Jumper:SolderJumper_2_Open JP130
+U 1 1 5E1BA53D
+P 8950 4400
+F 0 "JP130" H 8950 4605 50  0000 C CNN
+F 1 "RIGHT-B2" H 8950 4514 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 8950 4400 50  0001 C CNN
+F 3 "~" H 8950 4400 50  0001 C CNN
+	1    8950 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP131
+U 1 1 5E1BA543
+P 8950 4700
+F 0 "JP131" H 8950 4905 50  0000 C CNN
+F 1 "RIGHT-A2" H 8950 4814 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 8950 4700 50  0001 C CNN
+F 3 "~" H 8950 4700 50  0001 C CNN
+	1    8950 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 3950 9150 3950
+Wire Wire Line
+	9150 3600 9100 3600
+Connection ~ 9150 3950
+Wire Wire Line
+	9100 3900 9100 4150
+Wire Wire Line
+	9100 4150 9200 4150
+Wire Wire Line
+	9100 4400 9150 4400
+Wire Wire Line
+	9100 4700 9200 4700
+Wire Wire Line
+	8800 4400 8800 4150
+Connection ~ 8750 4150
+Wire Wire Line
+	8700 4700 8800 4700
+Wire Wire Line
+	8800 4150 8750 4150
+Wire Wire Line
+	9200 4150 9200 4700
+Wire Wire Line
+	9150 3950 9150 4400
+Wire Wire Line
+	8700 3950 8700 4700
+Wire Wire Line
+	9150 3600 9150 3950
+Wire Wire Line
+	8700 3950 8700 3600
+Connection ~ 8700 3950
+Connection ~ 9200 4150
+Wire Wire Line
+	8450 4050 9200 4050
+$Comp
+L Jumper:SolderJumper_2_Bridged JP201
+U 1 1 5E64AC78
+P 4150 1300
+F 0 "JP201" H 4150 1505 50  0000 C CNN
+F 1 "LEFT-SCL" H 4150 1414 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 4150 1300 50  0001 C CNN
+F 3 "~" H 4150 1300 50  0001 C CNN
+	1    4150 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP200
+U 1 1 5E64AC7E
+P 4150 1000
+F 0 "JP200" H 4150 1205 50  0000 C CNN
+F 1 "LEFT-SDA" H 4150 1114 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 4150 1000 50  0001 C CNN
+F 3 "~" H 4150 1000 50  0001 C CNN
+	1    4150 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP210
+U 1 1 5E64AC84
+P 3600 1100
+F 0 "JP210" H 3600 1305 50  0000 C CNN
+F 1 "RIGHT-SDA" H 3600 1214 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 3600 1100 50  0001 C CNN
+F 3 "~" H 3600 1100 50  0001 C CNN
+	1    3600 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP211
+U 1 1 5E64AC8A
+P 3600 1400
+F 0 "JP211" H 3600 1605 50  0000 C CNN
+F 1 "RIGHT-SCL" H 3600 1514 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 3600 1400 50  0001 C CNN
+F 3 "~" H 3600 1400 50  0001 C CNN
+	1    3600 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP203
+U 1 1 5E65B0C0
+P 4150 1950
+F 0 "JP203" H 4150 2155 50  0000 C CNN
+F 1 "LEFT-GND" H 4150 2064 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 4150 1950 50  0001 C CNN
+F 3 "~" H 4150 1950 50  0001 C CNN
+	1    4150 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP202
+U 1 1 5E65B0C6
+P 4150 1650
+F 0 "JP202" H 4150 1855 50  0000 C CNN
+F 1 "LEFT-VCC" H 4150 1764 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 4150 1650 50  0001 C CNN
+F 3 "~" H 4150 1650 50  0001 C CNN
+	1    4150 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP212
+U 1 1 5E65B0CC
+P 3600 1750
+F 0 "JP212" H 3600 1955 50  0000 C CNN
+F 1 "RIGHT-VCC" H 3600 1864 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 3600 1750 50  0001 C CNN
+F 3 "~" H 3600 1750 50  0001 C CNN
+	1    3600 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP213
+U 1 1 5E65B0D2
+P 3600 2050
+F 0 "JP213" H 3600 2255 50  0000 C CNN
+F 1 "RIGHT-GND" H 3600 2164 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 3600 2050 50  0001 C CNN
+F 3 "~" H 3600 2050 50  0001 C CNN
+	1    3600 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 1000 4350 1000
+Wire Wire Line
+	4550 1100 4300 1100
+Wire Wire Line
+	4300 1100 4300 1200
+Wire Wire Line
+	4550 1200 4350 1200
+Wire Wire Line
+	4350 1200 4350 1400
+Wire Wire Line
+	4350 1650 4300 1650
+Wire Wire Line
+	4300 1950 4400 1950
+Wire Wire Line
+	4400 1950 4400 1850
+Wire Wire Line
+	4400 1300 4550 1300
+Wire Wire Line
+	3750 1100 3950 1100
+Wire Wire Line
+	3950 1100 3950 1850
+Wire Wire Line
+	3950 1850 4400 1850
+Connection ~ 4400 1850
+Wire Wire Line
+	4400 1850 4400 1300
+Wire Wire Line
+	3750 1750 3850 1750
+Wire Wire Line
+	3850 1750 3850 1200
+Wire Wire Line
+	4350 900  4350 1000
+Connection ~ 4350 1000
+Wire Wire Line
+	4350 1000 4550 1000
+Wire Wire Line
+	3100 1100 3350 1100
+Wire Wire Line
+	3350 1100 3350 1300
+Wire Wire Line
+	3350 1300 4000 1300
+Wire Wire Line
+	3450 1100 3450 1000
+Connection ~ 3450 1000
+Wire Wire Line
+	3450 1000 3100 1000
+Wire Wire Line
+	3450 1400 3350 1400
+Wire Wire Line
+	3350 1400 3350 1300
+Connection ~ 3350 1300
+Wire Wire Line
+	3300 1200 3300 1650
+Wire Wire Line
+	3300 1650 4000 1650
+Wire Wire Line
+	3300 1650 3300 1750
+Wire Wire Line
+	3300 1750 3450 1750
+Connection ~ 3300 1650
+Wire Wire Line
+	4000 1950 3200 1950
+Wire Wire Line
+	3200 1950 3200 1300
+Wire Wire Line
+	2850 1300 3200 1300
+Wire Wire Line
+	3200 1950 3200 2050
+Wire Wire Line
+	3200 2050 3450 2050
+Connection ~ 3200 1950
+Wire Wire Line
+	4000 1000 3450 1000
+Wire Wire Line
+	3750 2050 3800 2050
+Wire Wire Line
+	3800 2050 3800 900 
+Wire Wire Line
+	3800 900  4350 900 
+Wire Wire Line
+	3850 1200 4300 1200
+Connection ~ 4300 1200
+Wire Wire Line
+	4300 1200 4300 1300
+Connection ~ 4350 1400
+Wire Wire Line
+	4350 1400 4350 1650
+Wire Wire Line
+	3750 1400 4350 1400
+$Comp
+L Switch:SW_SPDT SW22
+U 1 1 5E796336
+P 3700 4600
+F 0 "SW22" H 3700 4300 50  0000 L CNN
+F 1 "PWR" H 3750 4400 50  0000 L CNN
+F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 3700 4600 50  0001 C CNN
+F 3 "~" H 3700 4600 50  0001 C CNN
+	1    3700 4600
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3400 4900 3400 4600
+Wire Wire Line
+	3500 4600 3400 4600
+$Comp
+L Device:CP_Small C11
+U 1 1 5E7962F8
+P 3400 5000
+F 0 "C11" V 3200 4950 50  0000 L CNN
+F 1 "100u" V 3300 4950 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I_Pad1.58x1.35mm_HandSolder" H 3400 5000 50  0001 C CNN
+F 3 "~" H 3400 5000 50  0001 C CNN
+	1    3400 5000
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 3900 4500
+Connection ~ 4550 5650
+Wire Wire Line
+	4250 5650 4550 5650
+$Comp
+L Device:Battery_Cell BT2
+U 1 1 5DD7EBCF
+P 4550 5550
+F 0 "BT2" H 4668 5646 50  0000 L CNN
+F 1 "3V" H 4668 5555 50  0000 L CNN
+F 2 "nilgiri:HU1632" V 4550 5610 50  0001 C CNN
+F 3 "~" V 4550 5610 50  0001 C CNN
+	1    4550 5550
+	1    0    0    -1  
+$EndComp
+Connection ~ 4250 5650
+Wire Wire Line
+	4550 5650 4850 5650
+Wire Wire Line
+	5200 4600 5200 5650
+Wire Wire Line
+	4850 5100 4850 5650
+Connection ~ 4850 5650
+Wire Wire Line
+	4850 5650 5200 5650
+Wire Wire Line
+	3400 5100 3400 5650
+Wire Wire Line
+	3400 5650 4250 5650
+Wire Wire Line
+	3400 4600 3400 4200
+Wire Wire Line
+	3400 4200 4750 4200
+Wire Wire Line
+	4750 4200 4750 4600
+Connection ~ 3400 4600
+Connection ~ 4750 4600
+Wire Wire Line
+	4550 5250 4550 5350
+Wire Wire Line
+	3900 4700 4250 4700
+Connection ~ 4250 4700
+$Comp
+L Connector:Conn_01x01_Female J21
+U 1 1 5E6B86D9
+P 5300 4400
+F 0 "J21" V 5250 4350 50  0000 R CNN
+F 1 "BAT-" V 5150 4350 50  0000 R CNN
+F 2 "nilgiri:Hole 0.8mm" H 5300 4400 50  0001 C CNN
+F 3 "~" H 5300 4400 50  0001 C CNN
+	1    5300 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J20
+U 1 1 5E6B86DF
+P 4950 4400
+F 0 "J20" V 4900 4350 50  0000 R CNN
+F 1 "BAT+" V 4800 4350 50  0000 R CNN
+F 2 "nilgiri:Hole 0.8mm" H 4950 4400 50  0001 C CNN
+F 3 "~" H 4950 4400 50  0001 C CNN
+	1    4950 4400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4850 4600 4950 4600
+$Comp
+L Device:CP_Small C10
+U 1 1 5DB46BCD
+P 4850 5000
+F 0 "C10" V 4650 4950 50  0000 L CNN
+F 1 "100u" V 4750 4950 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I_Pad1.58x1.35mm_HandSolder" H 4850 5000 50  0001 C CNN
+F 3 "~" H 4850 5000 50  0001 C CNN
+	1    4850 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 4600 5200 4600
+Connection ~ 5200 4600
+Text GLabel 4750 3800 1    50   Input ~ 0
+Vbat
+Wire Wire Line
+	4750 3800 4750 4200
+Connection ~ 4750 4200
+Text GLabel 2350 1200 0    50   Input ~ 0
+Vbat
+$Comp
+L Jumper:SolderJumper_2_Open JP220
+U 1 1 5E6D39A3
+P 2500 850
+F 0 "JP220" H 2500 1055 50  0000 C CNN
+F 1 "VCC-USB" H 2500 964 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2500 850 50  0001 C CNN
+F 3 "~" H 2500 850 50  0001 C CNN
+	1    2500 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP221
+U 1 1 5E6E0A57
+P 2500 1200
+F 0 "JP221" H 2500 1405 50  0000 C CNN
+F 1 "VCC-BAT" H 2500 1314 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2500 1200 50  0001 C CNN
+F 3 "~" H 2500 1200 50  0001 C CNN
+	1    2500 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 1200 2800 1200
+Wire Wire Line
+	2650 850  2800 850 
+Wire Wire Line
+	2800 850  2800 1200
+Connection ~ 2800 1200
+Wire Wire Line
+	2800 1200 3300 1200
+Wire Wire Line
+	4250 5350 4250 5250
+Wire Wire Line
+	6400 900  6400 1350
+Connection ~ 6400 1350
+Wire Wire Line
+	6400 1350 6400 2050
+Wire Wire Line
+	7400 900  7400 1350
+Connection ~ 7400 1350
+Wire Wire Line
+	7400 1350 7400 2050
+Connection ~ 7400 2050
+Wire Wire Line
+	7400 2050 7400 2750
+Wire Wire Line
+	8400 900  8400 1350
+Connection ~ 8400 1350
+Wire Wire Line
+	8400 1350 8400 2050
+Connection ~ 8400 2050
+Wire Wire Line
+	8400 2050 8400 2750
+Wire Wire Line
+	9400 2750 9400 2050
+Connection ~ 9400 1350
+Wire Wire Line
+	9400 1350 9400 900 
+Connection ~ 9400 2050
+Wire Wire Line
+	9400 2050 9400 1350
 $EndSCHEMATC
