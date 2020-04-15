@@ -31,6 +31,7 @@ enum custom_keycodes {
   Mac_PS,
   Win_CS,
   Win_PS,
+  IOS_CS,
 };
 enum PROGMEM layerID {
   MAC_CS_1 = 0,
@@ -41,6 +42,8 @@ enum PROGMEM layerID {
   WIN_CS_2,
   WIN_PS_1,
   WIN_PS_2,
+  IOS_CS_1,
+  IOS_CS_2,
   SETTING,
   BLE,
 };
@@ -52,82 +55,131 @@ const key_string_map_t custom_keys_user =
     .key_strings = "\0"
 };
 
-const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-    [MAC_CS_1] = LAYOUT(
-      KC_TAB,       LGUI(KC_A), KC_E,    KC_P,   LGUI(KC_S),
-      MO(MAC_CS_2), KC_M,       KC_BSPC, KC_B,   KC_HYPR,
-                    KC_LSFT,    KC_LGUI, KC_SPC, LGUI(KC_Z)
-    ),
-    [MAC_CS_2] = LAYOUT(
-      MO(SETTING), LGUI(KC_D), KC_NO, KC_I, LGUI(KC_0),
-      _______,     LGUI(KC_D), KC_F,  KC_K, LGUI(KC_GRV),
-                   KC_LALT,    KC_R,  KC_H, SGUI(KC_Z)
-    ),
-    [MAC_PS_1] = LAYOUT(
-      KC_1,         KC_M, KC_A, KC_C, KC_1,
-      MO(MAC_PS_2), KC_P, KC_S, KC_1, KC_1,
-                    KC_1, KC_1, KC_1, KC_1
-    ),
-    [MAC_PS_2] = LAYOUT(
-      MO(SETTING), KC_M, KC_A, KC_C, KC_2,
-      _______,     KC_P, KC_S, KC_2, KC_2,
-                   KC_2, KC_2, KC_2, KC_2
-    ),
-    [WIN_CS_1] = LAYOUT(
-      KC_1,         KC_W, KC_I, KC_N, KC_1,
-      MO(WIN_CS_2), KC_C, KC_S, KC_1, KC_1,
-                    KC_1, KC_1, KC_1, KC_1
-    ),
-    [WIN_CS_2] = LAYOUT(
-      MO(SETTING), KC_W, KC_I, KC_N, KC_2,
-      _______,     KC_C, KC_S, KC_2, KC_2,
-                   KC_2, KC_2, KC_2, KC_2
-    ),
-    [WIN_PS_1] = LAYOUT(
-      KC_1,         KC_W, KC_I, KC_N, KC_1,
-      MO(WIN_PS_2), KC_P, KC_S, KC_1, KC_1,
-                    KC_1, KC_1, KC_1, KC_1
-    ),
-    [WIN_PS_2] = LAYOUT(
-      MO(SETTING), KC_W, KC_I, KC_N, KC_2,
-      _______,     KC_P, KC_S, KC_2, KC_2,
-                   KC_2, KC_2, KC_2, KC_2
-    ),
-    [SETTING] = LAYOUT(
-      _______, KC_NO,   Win_CS, Mac_CS, KC_NO,
-      _______, KC_NO,   Win_PS, Mac_PS, KC_NO,
-               MO(BLE), KC_NO,  KC_NO,  KC_NO
-    ),
-    [BLE] = LAYOUT(
-      _______, ADV_ID0, ADV_ID1, AD_WO_L, BATT_LV,
-      _______, DEL_ID0, DEL_ID1, ENT_SLP, ENT_DFU,
-               _______, USB_EN,  BLE_DIS, BLE_EN
-    ),
-};
+const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {};
 
 uint32_t keymaps_len() {
   return sizeof(keymaps)/sizeof(uint16_t);
 }
 
 void encoder_update_user(int8_t index, bool clockwise) {
+  uint8_t currentDefault = get_highest_layer(default_layer_state);
+  uint8_t currentLayer = get_highest_layer(layer_state);
   if (index == 0) { /* the upper encoder */
-    switch(biton32(layer_state)) {
-      case 0:
-        !clockwise ? SEND_STRING(SS_LGUI("[")) : SEND_STRING(SS_LGUI("]"));
+    switch (currentDefault) {
+      case MAC_CS_1:
+        if (currentLayer % 2 == 0) {
+          // default layer
+          // Zoom
+          tap_code16(!clockwise ? G(KC_MINS) : G(KC_EQL));
+        } else {
+          // Fn Layer
+          // rotate canvas
+          tap_code(!clockwise ? KC_MINS : KC_QUOT);
+        }
         break;
-      case 1:
-        !clockwise ? SEND_STRING(SS_LGUI("-")) : SEND_STRING(SS_LGUI("="));
+      case MAC_PS_1:
+        if (currentLayer % 2 == 0) {
+          // default layer
+          // Zoom
+          tap_code16(!clockwise ? G(KC_MINS) : G(KC_EQL));
+        } else {
+          // Fn Layer
+          // undo / redo
+          tap_code16(!clockwise ? G(KC_Z) : S(G(KC_Z)));
+        }
+        break;
+      case WIN_CS_1:
+        if (currentLayer % 2 == 0) {
+          // default layer
+          // Zoom
+          tap_code16(!clockwise ? C(KC_MINS) : C(KC_SCLN));
+        } else {
+          // Fn Layer
+          // rotate canvas
+          tap_code(!clockwise ? KC_MINS : KC_EQL);
+        }
+        break;
+      case WIN_PS_1:
+        if (currentLayer % 2 == 0) {
+          // default layer
+          // Zoom
+          tap_code16(!clockwise ? C(KC_MINS) : C(KC_SCLN));
+        } else {
+          // Fn Layer
+          // undo / redo
+          tap_code16(!clockwise ? C(KC_Z) : C(S(KC_Z)));
+        }
+        break;
+      case IOS_CS_1:
+        if (currentLayer % 2 == 0) {
+          // default layer
+          // Zoom 
+          tap_code16(!clockwise ? G(KC_MINS) : G(KC_SCLN));
+        } else {
+          // Fn Layer
+          // rotate canvas
+          tap_code(!clockwise ? KC_MINS : KC_EQL);
+        }
         break;
       default:
         break;
     }
-  } else if (index == 1) { /* the lower encoder */
-    switch(biton32(layer_state)) {
-      case 0:
-        !clockwise ? tap_code(KC_LBRC) : tap_code(KC_RBRC);
+  } else if (index == 1) { /* the lower encoder */ 
+    switch (currentDefault) {
+      case MAC_CS_1:
+        if (currentLayer % 2 == 0) {
+          // default layer
+          // size of brush
+          tap_code(!clockwise ? KC_LBRC : KC_RBRC);
+        } else {
+          // Fn Layer
+          // opacity of brush
+          tap_code16(!clockwise ? G(KC_LBRC) : G(KC_RBRC));
+        }
         break;
-      case 1:
-        !clockwise ? tap_code(KC_MINUS) : tap_code(KC_QUOTE);
+      case MAC_PS_1:
+        if (currentLayer % 2 == 0) {
+          // default layer
+          // size of brush
+          tap_code(!clockwise ? KC_LBRC : KC_RBRC);
+        } else {
+          // Fn Layer
+          // opacity of brush
+          tap_code16(!clockwise ? KC_LCBR : KC_RCBR);
+        }
+        break;
+      case WIN_CS_1:
+        if (currentLayer % 2 == 0) {
+          // default layer
+          // rotate canvas
+          tap_code(!clockwise ? KC_RBRC : KC_BSLS);
+        } else {
+          // Fn Layer
+          // opacity of brush
+          tap_code16(!clockwise ? C(KC_RBRC) : C(KC_BSLS));
+        }
+        break;
+      case WIN_PS_1:
+        if (currentLayer % 2 == 0) {
+          // default layer
+          // rotate canvas
+          tap_code(!clockwise ? KC_LBRC : KC_RBRC);
+        } else {
+          // Fn Layer
+          // opacity of brush
+          tap_code16(!clockwise ? KC_LCBR : KC_RCBR);
+        }
+        break;
+      case IOS_CS_1:
+        if (currentLayer % 2 == 0) {
+          // default layer
+          // size of brush
+          tap_code(!clockwise ? KC_RBRC : KC_BSLS);
+        } else {
+          // Fn Layer
+          // opacity of brush
+          tap_code16(!clockwise ? G(KC_RBRC) : G(KC_BSLS));
+        }
         break;
       default:
         break;
@@ -144,25 +196,31 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
     case Mac_CS:
       if (record->event.pressed) {
-        setBaseLayer(MAC_CS_1);
+        set_single_persistent_default_layer(MAC_CS_1);
       }
       return false;
       break;
     case Mac_PS:
       if (record->event.pressed) {
-        setBaseLayer(MAC_PS_1);
+        set_single_persistent_default_layer(MAC_PS_1);
       }
       return false;
       break;
     case Win_CS:
       if (record->event.pressed) {
-        setBaseLayer(WIN_CS_1);
+        set_single_persistent_default_layer(WIN_CS_1);
       }
       return false;
       break;
     case Win_PS:
       if (record->event.pressed) {
-        setBaseLayer(WIN_PS_1);
+        set_single_persistent_default_layer(WIN_PS_1);
+      }
+      return false;
+      break;
+    case IOS_CS:
+      if (record->event.pressed) {
+        set_single_persistent_default_layer(IOS_CS_1);
       }
       return false;
       break;
@@ -174,10 +232,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 #ifdef OLED_DRIVER_ENABLE
 void oled_task_user(void) {
   // get layer Number
-  // int currentDefault = eeconfig_read_default_layer();
-  int currentLayer = get_highest_layer(layer_state);
+  uint8_t currentDefault = get_highest_layer(default_layer_state);
+  uint8_t currentLayer = get_highest_layer(layer_state);
   // write OS mode / 1st line of the logo
-  switch (biton32(default_layer_state)) {
+  switch (currentDefault) {
     case MAC_CS_1:
     case MAC_PS_1:
       render_row(0, "Mac ");
@@ -186,14 +244,18 @@ void oled_task_user(void) {
     case WIN_PS_1:
       render_row(0, "Win ");
       break;
+    case IOS_CS_1:
+      render_row(0, "iOS ");
+      break;
     default:
       render_row(0, "    ");
   }
 
   // write Application mode / 2nd line of the logo
-  switch (biton32(default_layer_state)) {
+  switch (currentDefault) {
     case MAC_CS_1:
     case WIN_CS_1:
+    case IOS_CS_1:
       render_row(1, "A:CS");
       break;
     case MAC_PS_1:
