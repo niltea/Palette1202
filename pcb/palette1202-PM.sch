@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:palette1202-PM-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -95,7 +94,7 @@ F 3 "~" H 11000 2900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L kbd:SW_PUSH SW12
+L palette1202-PM-rescue:SW_PUSH-kbd SW12
 U 1 1 5D901D5A
 P 10700 2750
 F 0 "SW12" H 10700 3005 50  0000 C CNN
@@ -117,7 +116,7 @@ F 3 "~" H 10000 2900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L kbd:SW_PUSH SW11
+L palette1202-PM-rescue:SW_PUSH-kbd SW11
 U 1 1 5D901472
 P 9700 2750
 F 0 "SW11" H 9700 3005 50  0000 C CNN
@@ -141,7 +140,7 @@ F 3 "~" H 10000 1500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L kbd:SW_PUSH SW9
+L palette1202-PM-rescue:SW_PUSH-kbd SW9
 U 1 1 5D8FB420
 P 9700 1350
 F 0 "SW9" H 9700 1605 50  0000 C CNN
@@ -163,7 +162,7 @@ F 3 "~" H 10000 2200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L kbd:SW_PUSH SW10
+L palette1202-PM-rescue:SW_PUSH-kbd SW10
 U 1 1 5D8FB414
 P 9700 2050
 F 0 "SW10" H 9700 2305 50  0000 C CNN
@@ -185,7 +184,7 @@ F 3 "~" H 9000 2200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L kbd:SW_PUSH SW7
+L palette1202-PM-rescue:SW_PUSH-kbd SW7
 U 1 1 5D8FB407
 P 8700 2050
 F 0 "SW7" H 8700 2305 50  0000 C CNN
@@ -207,7 +206,7 @@ F 3 "~" H 9000 1500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L kbd:SW_PUSH SW6
+L palette1202-PM-rescue:SW_PUSH-kbd SW6
 U 1 1 5D8FB3FB
 P 8700 1350
 F 0 "SW6" H 8700 1605 50  0000 C CNN
@@ -237,7 +236,7 @@ F 3 "~" H 9000 2900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L kbd:SW_PUSH SW8
+L palette1202-PM-rescue:SW_PUSH-kbd SW8
 U 1 1 5D8E4D5E
 P 8700 2750
 F 0 "SW8" H 8700 3005 50  0000 C CNN
@@ -259,7 +258,7 @@ F 3 "~" H 8000 1500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L kbd:SW_PUSH SW3
+L palette1202-PM-rescue:SW_PUSH-kbd SW3
 U 1 1 5D8E00E6
 P 7700 1350
 F 0 "SW3" H 7700 1605 50  0000 C CNN
@@ -281,7 +280,7 @@ F 3 "~" H 8000 2200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L kbd:SW_PUSH SW4
+L palette1202-PM-rescue:SW_PUSH-kbd SW4
 U 1 1 5D8DF6BC
 P 7700 2050
 F 0 "SW4" H 7700 2305 50  0000 C CNN
@@ -303,7 +302,7 @@ F 3 "~" H 7000 2200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L kbd:SW_PUSH SW2
+L palette1202-PM-rescue:SW_PUSH-kbd SW2
 U 1 1 5D8D8D84
 P 6700 2050
 F 0 "SW2" H 6700 2305 50  0000 C CNN
@@ -327,7 +326,7 @@ F 3 "~" H 7000 1500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L kbd:SW_PUSH SW1
+L palette1202-PM-rescue:SW_PUSH-kbd SW1
 U 1 1 5D8CF41D
 P 6700 1350
 F 0 "SW1" H 6700 1605 50  0000 C CNN
@@ -422,52 +421,6 @@ F 3 "~" V 4250 5610 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L kbd:ProMicro U2
-U 1 1 5DB1FC64
-P 2200 3350
-F 0 "U2" H 2200 4387 50  0000 C CNN
-F 1 "ProMicro" H 2200 4281 50  0000 C CNN
-F 2 "kbd:ProMicro_v2" H 2300 2300 60  0000 C CNN
-F 3 "" H 2300 2300 60  0000 C CNN
-	1    2200 3350
-	1    0    0    -1  
-$EndComp
-NoConn ~ 2900 2600
-Text GLabel 2900 3500 2    50   Input ~ 0
-Row2
-NoConn ~ 2900 3400
-NoConn ~ 1500 2600
-NoConn ~ 1500 2700
-NoConn ~ 1500 3200
-Text GLabel 2900 2800 2    50   Input ~ 0
-RESET
-Text GLabel 2900 3200 2    50   Input ~ 0
-RA2
-Text GLabel 2900 3600 2    50   Input ~ 0
-Row1
-Text GLabel 1500 3400 0    50   Input ~ 0
-Col1
-Text GLabel 2900 3300 2    50   Input ~ 0
-RB2
-Text GLabel 2900 3000 2    50   Input ~ 0
-RA1
-Text GLabel 2900 3100 2    50   Input ~ 0
-RB1
-Text GLabel 1500 3700 0    50   Input ~ 0
-Col4
-Text GLabel 1500 3600 0    50   Input ~ 0
-Col3
-Text GLabel 1500 3500 0    50   Input ~ 0
-Col2
-Text GLabel 1500 3300 0    50   Input ~ 0
-Col0
-Text GLabel 2900 3700 2    50   Input ~ 0
-Row0
-Text GLabel 1500 3000 0    50   Input ~ 0
-SDA
-Text GLabel 1500 3100 0    50   Input ~ 0
-SCL
-$Comp
 L Connector:Conn_01x04_Female J4
 U 1 1 5DD523BB
 P 4750 1100
@@ -482,36 +435,6 @@ Text GLabel 3100 1000 0    50   Input ~ 0
 SDA
 Text GLabel 3100 1100 0    50   Input ~ 0
 SCL
-Wire Wire Line
-	1500 2800 1000 2800
-Wire Wire Line
-	1000 2800 1000 3050
-$Comp
-L power:GND #PWR0105
-U 1 1 5DD84D2D
-P 1000 3050
-F 0 "#PWR0105" H 1000 2800 50  0001 C CNN
-F 1 "GND" V 1005 2922 50  0000 R CNN
-F 2 "" H 1000 3050 50  0001 C CNN
-F 3 "" H 1000 3050 50  0001 C CNN
-	1    1000 3050
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1500 2900 1500 2800
-$Comp
-L power:GND #PWR0106
-U 1 1 5DD907F3
-P 3300 2700
-F 0 "#PWR0106" H 3300 2450 50  0001 C CNN
-F 1 "GND" V 3305 2572 50  0000 R CNN
-F 2 "" H 3300 2700 50  0001 C CNN
-F 3 "" H 3300 2700 50  0001 C CNN
-	1    3300 2700
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	3300 2700 2900 2700
 $Comp
 L power:GND #PWR0107
 U 1 1 5DD9CC64
@@ -526,16 +449,16 @@ $EndComp
 $Comp
 L power:GND #PWR0108
 U 1 1 5DDB4F7A
-P 2850 1350
-F 0 "#PWR0108" H 2850 1100 50  0001 C CNN
-F 1 "GND" V 2855 1222 50  0000 R CNN
-F 2 "" H 2850 1350 50  0001 C CNN
-F 3 "" H 2850 1350 50  0001 C CNN
-	1    2850 1350
+P 2950 1350
+F 0 "#PWR0108" H 2950 1100 50  0001 C CNN
+F 1 "GND" V 2955 1222 50  0000 R CNN
+F 2 "" H 2950 1350 50  0001 C CNN
+F 3 "" H 2950 1350 50  0001 C CNN
+	1    2950 1350
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	2850 1300 2850 1350
+	2950 1300 2950 1350
 Text GLabel 2350 850  0    50   Input ~ 0
 VCC
 Text GLabel 10400 900  1    50   Input ~ 0
@@ -546,7 +469,7 @@ Connection ~ 10000 3050
 Wire Wire Line
 	9000 3050 10000 3050
 $Comp
-L kbd:SW_PUSH SW5
+L palette1202-PM-rescue:SW_PUSH-kbd SW5
 U 1 1 5D904BF4
 P 7700 2750
 F 0 "SW5" H 7700 3005 50  0000 C CNN
@@ -626,8 +549,6 @@ Wire Wire Line
 	1000 1450 1200 1450
 Wire Wire Line
 	1800 950  1800 1450
-Text GLabel 2900 2900 2    50   Input ~ 0
-VCC
 $Comp
 L Device:D_Schottky D30
 U 1 1 5DD7EBC8
@@ -1015,8 +936,6 @@ Wire Wire Line
 	3350 1400 3350 1300
 Connection ~ 3350 1300
 Wire Wire Line
-	3300 1200 3300 1650
-Wire Wire Line
 	3300 1650 4000 1650
 Wire Wire Line
 	3300 1650 3300 1750
@@ -1028,7 +947,7 @@ Wire Wire Line
 Wire Wire Line
 	3200 1950 3200 1300
 Wire Wire Line
-	2850 1300 3200 1300
+	2950 1300 3200 1300
 Wire Wire Line
 	3200 1950 3200 2050
 Wire Wire Line
@@ -1227,4 +1146,176 @@ Wire Wire Line
 Connection ~ 9400 2050
 Wire Wire Line
 	9400 2050 9400 1350
+Text GLabel 1200 5050 0    50   Input ~ 0
+PWR
+Text GLabel 2000 5050 2    50   Input ~ 0
+LEFT
+$Comp
+L Connector:AudioJack4 J1_LEFT1
+U 1 1 6229B15F
+P 1250 5650
+F 0 "J1_LEFT1" H 1207 5975 50  0000 C CNN
+F 1 "AudioJack4" H 1207 5884 50  0000 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_PJ320E_Horizontal" H 1250 5650 50  0001 C CNN
+F 3 "~" H 1250 5650 50  0001 C CNN
+	1    1250 5650
+	1    0    0    -1  
+$EndComp
+Text GLabel 1650 5850 2    50   Input ~ 0
+VCC
+Text GLabel 1650 5650 2    50   Input ~ 0
+DATA
+$Comp
+L power:GND #PWR0101
+U 1 1 622B0E4F
+P 2000 5550
+F 0 "#PWR0101" H 2000 5300 50  0001 C CNN
+F 1 "GND" V 2005 5422 50  0000 R CNN
+F 2 "" H 2000 5550 50  0001 C CNN
+F 3 "" H 2000 5550 50  0001 C CNN
+	1    2000 5550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 5550 2000 5550
+Wire Wire Line
+	1650 5650 1500 5650
+Wire Wire Line
+	1450 5750 1500 5750
+Wire Wire Line
+	1500 5750 1500 5650
+Connection ~ 1500 5650
+Wire Wire Line
+	1500 5650 1450 5650
+Wire Wire Line
+	1650 5850 1450 5850
+Text GLabel 2350 1450 0    50   Output ~ 0
+PWR
+Wire Wire Line
+	2800 1200 2800 1450
+Wire Wire Line
+	2800 1450 2350 1450
+Wire Wire Line
+	3300 1200 3300 1650
+Text GLabel 1500 2600 0    50   Input ~ 0
+DATA
+Text GLabel 1500 2700 0    50   Input ~ 0
+LEFT
+Text GLabel 2900 2900 2    50   Input ~ 0
+VCC
+Wire Wire Line
+	3300 2700 2900 2700
+$Comp
+L power:GND #PWR0106
+U 1 1 5DD907F3
+P 3300 2700
+F 0 "#PWR0106" H 3300 2450 50  0001 C CNN
+F 1 "GND" V 3305 2572 50  0000 R CNN
+F 2 "" H 3300 2700 50  0001 C CNN
+F 3 "" H 3300 2700 50  0001 C CNN
+	1    3300 2700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 2900 1500 2800
+$Comp
+L power:GND #PWR0105
+U 1 1 5DD84D2D
+P 1000 3050
+F 0 "#PWR0105" H 1000 2800 50  0001 C CNN
+F 1 "GND" V 1005 2922 50  0000 R CNN
+F 2 "" H 1000 3050 50  0001 C CNN
+F 3 "" H 1000 3050 50  0001 C CNN
+	1    1000 3050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 2800 1000 3050
+Wire Wire Line
+	1500 2800 1000 2800
+Text GLabel 1500 3100 0    50   Input ~ 0
+SCL
+Text GLabel 1500 3000 0    50   Input ~ 0
+SDA
+Text GLabel 2900 3700 2    50   Input ~ 0
+Row0
+Text GLabel 1500 3300 0    50   Input ~ 0
+Col0
+Text GLabel 1500 3500 0    50   Input ~ 0
+Col2
+Text GLabel 1500 3600 0    50   Input ~ 0
+Col3
+Text GLabel 1500 3700 0    50   Input ~ 0
+Col4
+Text GLabel 2900 3100 2    50   Input ~ 0
+RB1
+Text GLabel 2900 3000 2    50   Input ~ 0
+RA1
+Text GLabel 2900 3300 2    50   Input ~ 0
+RB2
+Text GLabel 1500 3400 0    50   Input ~ 0
+Col1
+Text GLabel 2900 3600 2    50   Input ~ 0
+Row1
+Text GLabel 2900 3200 2    50   Input ~ 0
+RA2
+Text GLabel 2900 2800 2    50   Input ~ 0
+RESET
+NoConn ~ 1500 3200
+NoConn ~ 2900 3400
+Text GLabel 2900 3500 2    50   Input ~ 0
+Row2
+NoConn ~ 2900 2600
+$Comp
+L palette1202-PM-rescue:ProMicro-kbd U2
+U 1 1 5DB1FC64
+P 2200 3350
+F 0 "U2" H 2200 4387 50  0000 C CNN
+F 1 "ProMicro" H 2200 4281 50  0000 C CNN
+F 2 "kbd:ProMicro_v2" H 2300 2300 60  0000 C CNN
+F 3 "" H 2300 2300 60  0000 C CNN
+	1    2200 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 5050 2000 5050
+$Comp
+L Connector:AudioJack4 J2_RIGHT1
+U 1 1 62349772
+P 1250 6350
+F 0 "J2_RIGHT1" H 1207 6675 50  0000 C CNN
+F 1 "AudioJack4" H 1207 6584 50  0000 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_PJ320E_Horizontal" H 1250 6350 50  0001 C CNN
+F 3 "~" H 1250 6350 50  0001 C CNN
+	1    1250 6350
+	1    0    0    -1  
+$EndComp
+Text GLabel 1650 6550 2    50   Input ~ 0
+VCC
+Text GLabel 1650 6350 2    50   Input ~ 0
+DATA
+$Comp
+L power:GND #PWR0102
+U 1 1 6234977A
+P 2000 6250
+F 0 "#PWR0102" H 2000 6000 50  0001 C CNN
+F 1 "GND" V 2005 6122 50  0000 R CNN
+F 2 "" H 2000 6250 50  0001 C CNN
+F 3 "" H 2000 6250 50  0001 C CNN
+	1    2000 6250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 6250 2000 6250
+Wire Wire Line
+	1650 6350 1500 6350
+Wire Wire Line
+	1450 6450 1500 6450
+Wire Wire Line
+	1500 6450 1500 6350
+Connection ~ 1500 6350
+Wire Wire Line
+	1500 6350 1450 6350
+Wire Wire Line
+	1650 6550 1450 6550
 $EndSCHEMATC

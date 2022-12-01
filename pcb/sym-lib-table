@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name kbd)(type Legacy)(uri ${KIPRJMOD}//kbd/library/kbd.lib)(options "")(descr ""))
+  (lib (name palette1202-PM-rescue)(type Legacy)(uri ${KIPRJMOD}/palette1202-PM-rescue.lib)(options "")(descr ""))
 )

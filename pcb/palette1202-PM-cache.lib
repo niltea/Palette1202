@@ -1,6 +1,30 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# Connector_AudioJack4
+#
+DEF Connector_AudioJack4 J 0 20 Y Y 1 F N
+F0 "J" 0 350 50 H V C CNN
+F1 "Connector_AudioJack4" 0 250 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Jack*
+$ENDFPLIST
+DRAW
+S -250 -200 -300 -300 0 1 10 F
+S 100 150 -250 -300 0 1 10 f
+P 4 0 1 10 0 -200 25 -225 50 -200 100 -200 N
+P 5 0 1 10 -225 -200 -200 -225 -175 -200 -175 100 100 100 N
+P 5 0 1 10 -75 -200 -50 -225 -25 -200 -25 -100 100 -100 N
+P 5 0 1 10 100 0 -100 0 -100 -200 -125 -225 -150 -200 N
+X ~ R1 200 -100 100 L 50 50 1 1 P
+X ~ R2 200 0 100 L 50 50 1 1 P
+X ~ S 200 100 100 L 50 50 1 1 P
+X ~ T 200 -200 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Connector_Conn_01x01_Female
 #
 DEF Connector_Conn_01x01_Female J 0 40 Y N 1 F N
@@ -97,9 +121,9 @@ $FPLIST
  D_*
 $ENDFPLIST
 DRAW
-P 2 0 1 8 -50 50 -50 -50 N
+P 2 0 1 10 -50 50 -50 -50 N
 P 2 0 1 0 50 0 -50 0 N
-P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
+P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
 X K 1 -150 0 100 R 50 50 1 1 P
 X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
@@ -120,8 +144,8 @@ $FPLIST
 $ENDFPLIST
 DRAW
 P 2 0 1 0 50 0 -50 0 N
-P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
-P 6 0 1 8 -75 25 -75 50 -50 50 -50 -50 -25 -50 -25 -25 N
+P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
+P 6 0 1 10 -75 25 -75 50 -50 50 -50 -50 -25 -50 -25 -25 N
 X K 1 -150 0 100 R 50 50 1 1 P
 X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
@@ -260,11 +284,11 @@ X C 3 200 -100 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# kbd_ProMicro
+# palette1202-PM-rescue_ProMicro-kbd
 #
-DEF kbd_ProMicro U 0 40 Y Y 1 F N
+DEF palette1202-PM-rescue_ProMicro-kbd U 0 40 Y Y 1 F N
 F0 "U" 0 950 60 H V C CNN
-F1 "kbd_ProMicro" 0 -550 60 H V C CNN
+F1 "palette1202-PM-rescue_ProMicro-kbd" 0 -550 60 H V C CNN
 F2 "" 100 -1050 60 H V C CNN
 F3 "" 100 -1050 60 H V C CNN
 DRAW
@@ -296,11 +320,11 @@ X 6/D7 9 -700 -50 200 R 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# kbd_SW_PUSH
+# palette1202-PM-rescue_SW_PUSH-kbd
 #
-DEF kbd_SW_PUSH SW 0 40 N N 1 F N
+DEF palette1202-PM-rescue_SW_PUSH-kbd SW 0 40 N N 1 F N
 F0 "SW" 150 110 50 H V C CNN
-F1 "kbd_SW_PUSH" 0 -80 50 H V C CNN
+F1 "palette1202-PM-rescue_SW_PUSH-kbd" 0 -80 50 H V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 DRAW
